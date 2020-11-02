@@ -21,6 +21,12 @@ header {
   position: static;
   height: 80%;
   margin: 0.5% 0% 0% 2%;
+  transition:transform  1s linear;
+
+}
+
+.logoHeader:hover{
+  transform:scale(1.2) rotate(360deg);
 }
 
 /* INICIO BARRA DE NAVEGACION */
@@ -34,10 +40,15 @@ nav {
   position: relative;
   width: 18%;
   font-weight: bolder;
-
+  margin-top: 1.5%;
+  padding-bottom: 1%;
 }
 
 .sub-menu {
+  background: #E5ECFB;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+  
   visibility: hidden; /* Oculto los submenus por defecto*/
   opacity: 0;
   position: absolute;
@@ -61,6 +72,11 @@ nav {
   transition-delay: 0s, 0s, 0.3s;
   /* esto elimina el retraso de la transición para que el menú sea visible
    mientras los otros estilos hacen la transición */
+}
+
+.sub-menu a:hover {
+  background: #8aa0d5;
+border-radius: 1em;
 }
 
 /* Estilo del menu*/
@@ -99,19 +115,7 @@ nav > ul > li:first-child {
   border-left: none;
   margin-left: -10%;
 }
-.sub-menu-parent {
-  margin-top: 1.5%;
-}
-.sub-menu {
-  background: #E5ECFB;
-  border-bottom-right-radius: 1em;
-  border-bottom-left-radius: 1em;
-}
 
-.sub-menu a:hover {
-  background: #8aa0d5;
-border-radius: 1em;
-}
 /*FIN BARRA NAVEGACION*/
 /*FIN CABECERA*/
 
