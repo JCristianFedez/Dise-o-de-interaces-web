@@ -1,0 +1,20 @@
+body{
+    background-color: lightblue;
+    color:grey;
+}
+
+h1,h2{
+    color:red;
+}
+
+#definicion{
+    color:black;
+    font-size:16px;
+    font-weight: bold;
+}
+
+#parrafo_especial{
+    color:green;
+    font-size:14px;
+    font-style: italic;
+}

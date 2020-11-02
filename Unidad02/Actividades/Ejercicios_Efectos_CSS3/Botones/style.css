@@ -1,0 +1,65 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+header{
+    width: 100%;
+    height: 100px;
+    /* background-color: blue; */
+    text-align: center;
+}
+header ul{
+    list-style-type: none;
+    overflow: hidden;
+    display: inline-block;
+}
+
+header ul li{
+    margin:2em 1em;
+    /* background-color: red; */
+    float:left;
+}
+header ul li a{
+    text-align:center;
+    padding:1em 2em;
+    /* background-color: green; */
+    text-decoration:none;
+    border-radius: .5em;
+}
+
+header ul li:nth-child(1) a{
+ box-shadow: 2px 2px 4px  hsla(6, 100%, 50%, 0.5);
+ text-shadow: 2px 2px 4px  hsla(6, 100%, 50%, 0.5);
+ color:white;
+ background-image: linear-gradient(120deg, lightblue, blue);
+}
+header ul li:nth-child(2) a{
+    box-shadow: -2px -2px 4px  rgba(0, 0, 0, 0.5);
+    text-shadow: -2px -2px 4px rgba(0, 0, 0, 0.5);
+    color:white;
+    background-image: linear-gradient(300deg, rgb(215, 230, 173), rgb(255, 0, 0));
+}
+header ul li:nth-child(3) a{
+    box-shadow: 
+    5px 5px 10px  rgba(0, 128, 11, 0.5),
+    -5px -5px 10px  rgba(0, 128, 11, 0.5),
+    -5px 5px 10px  rgba(0, 128, 11, 0.5),
+     5px -5px 10px  rgba(0, 128, 11, 0.5);
+    text-shadow: 2px 2px 4px  hsla(6, 100%, 50%, 0.5);
+    color:darkgreen;
+    background-image: radial-gradient(rgb(137, 175, 148) 20%,rgb(29, 123, 10))
+}
+header ul li:nth-child(4) a{
+    box-shadow: 2px 2px 4px  hsla(6, 100%, 50%, 0.5);
+    text-shadow: 
+    1px 1px 2px  hsla(6, 100%, 50%, 1),
+    1px -1px 2px  hsla(6, 100%, 50%, 1),
+    -1px 1px 2px  hsla(6, 100%, 50%, 1),
+    -1px -1px 2px  hsla(6, 100%, 50%, 1),
+    2px 2px 2px  hsla(243, 100%, 50%, 1),
+    2px -2px 2px  hsla(243, 100%, 50%, 1),
+    -2px 2px 2px  hsla(243, 100%, 50%, 1),
+    -2px -2px 2px  hsla(243, 100%, 50%, 1);
+    color:white;
+    background-image: radial-gradient(hsla(243, 100%, 50%, 1) 20%, hsla(6, 100%, 50%, 1));
+}

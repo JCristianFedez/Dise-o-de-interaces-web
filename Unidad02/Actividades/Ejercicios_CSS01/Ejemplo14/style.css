@@ -1,0 +1,14 @@
+thead{
+    background-color: grey;
+    color:white;
+}
+
+tbody{
+    color: grey;
+    text-align: center;
+}
+
+tfoot{
+    color:white;
+    background-color: black;
+}

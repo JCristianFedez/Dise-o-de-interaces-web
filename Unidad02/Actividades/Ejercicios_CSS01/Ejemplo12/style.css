@@ -1,0 +1,18 @@
+h1{
+    text-align: center;
+}
+.container{
+    border:1px solid grey;
+    border-radius: 1em;
+    padding:1em;
+    overflow-y: auto;
+
+}
+img{
+    float:right;
+    overflow-y: auto;
+}
+
+.left{
+    float:left;
+}

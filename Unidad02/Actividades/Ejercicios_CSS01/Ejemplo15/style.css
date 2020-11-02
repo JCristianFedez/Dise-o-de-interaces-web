@@ -1,0 +1,27 @@
+body{
+    font-size: .8em;
+}
+
+h1{
+    color:red;
+    border-bottom: 5px solid red;
+}
+
+table{
+    border:3px dashed red;
+    border-bottom:5px solid red;
+}
+
+input,textarea{
+    border:1px dashed red;
+}
+textarea{
+    color:green;
+}
+
+td,input[type=checkbox]{
+    color:red;
+}
+input[type=submit],input[type=reset]{
+    color:green;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Una lista de 4 enlaces dentro de un div que pertenecerá a la 
+        clase cabecera, todo dentro de la etiqueta semántica <nav>,
+        teniendo en cuenta que <ul> pertenecerá a la clase navbar 
+        y los elementos <li> a navitems. -->
+        <!-- nav>.cabecera>ul.navbar>li.navitems*4 -->
+        <nav>
+            <div class="cabecera">
+                <ul class="navbar">
+                    <li class="navitems"></li>
+                    <li class="navitems"></li>
+                    <li class="navitems"></li>
+                    <li class="navitems"></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Dentro de la etiqueta semántica <main>, tres div que pertenezcan 
+            a la clase card, con una imagen perteneciente a la clase imgcard
+            y un titular de nivel 3 dentro de cada uno. -->
+        <!-- main>.card*3>h3+img.imgcard -->
+        <main>
+            <div class="card">
+                <h3></h3>
+                <img src="" alt="" class="imgcard">
+            </div>
+            <div class="card">
+                <h3></h3>
+                <img src="" alt="" class="imgcard">
+            </div>
+            <div class="card">
+                <h3></h3>
+                <img src="" alt="" class="imgcard">
+            </div>
+        </main>
+
+        <!-- Un lista de definición para 5 elementos dentro de un div que 
+            pertenezca a la clase seccion1, dentro de una sección HTML 
+            (<section>). -->
+        <!-- section>.seccion1>dl>(dt>dd)*5 -->
+        <section>
+            <div class="seccion1">
+                <dl>
+                    <dt>
+                        <dd></dd>
+                    </dt>
+                    <dt>
+                        <dd></dd>
+                    </dt>
+                    <dt>
+                        <dd></dd>
+                    </dt>
+                    <dt>
+                        <dd></dd>
+                    </dt>
+                    <dt>
+                        <dd></dd>
+                    </dt>
+                </dl>
+            </div>
+        </section>
+
+        <!-- Otra sección que pertenezca a la clase seccion2 conteniendo 6 
+        imágenes pertencecientes a la clase gallery. -->
+        <!-- section.seccion2>img.gallery*6 -->
+        <section class="seccion2">
+            <img src="" alt="" class="gallery">
+            <img src="" alt="" class="gallery">
+            <img src="" alt="" class="gallery">
+            <img src="" alt="" class="gallery">
+            <img src="" alt="" class="gallery">
+            <img src="" alt="" class="gallery">
+        </section>
+
+        <!-- Dentro del pie de página HTML (<footer>): una etiqueta semántica 
+            <address> conteniendo tres párrafos, un <div> perteneciente a la
+            clase pie, y una sección pertenceciente a la clase social
+            con tres imágenes en su interior. -->
+        <!-- footer>address>p*3+.pie+dl.social>dt>dl>img*3 -->
+        <footer>
+            <address>
+                <p></p>
+                <p></p>
+                <p></p>
+                <div class="pie"></div>
+                <dl class="social">
+                    <dt>
+                        <dl>
+                            <img src="" alt="">
+                            <img src="" alt="">
+                            <img src="" alt="">
+                        </dl>
+                    </dt>
+                </dl>
+            </address>
+        </footer>
+</body>
+</html>

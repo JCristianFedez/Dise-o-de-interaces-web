@@ -1,0 +1,26 @@
+.title{
+text-shadow: 2px 2px 0px hsla(140, 3%, 36%, 0.5);
+}
+
+p{
+    text-shadow: 4px 5px 0 hsla(0, 36%, 68%, 0.5);
+}
+a{
+    text-shadow: none;
+}
+div{
+    padding:1em;
+    margin: 1em;
+}
+.shady{
+box-shadow:4px 4px 4px green;
+}
+
+.shady2{
+box-shadow:-4px -4px 0px orangered;
+
+}
+
+.shady3{
+box-shadow: 4px 0px 0px blue;;
+}

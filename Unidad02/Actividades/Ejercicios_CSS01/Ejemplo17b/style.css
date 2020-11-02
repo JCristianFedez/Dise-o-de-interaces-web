@@ -1,0 +1,31 @@
+html{
+    background-image: url(html5.png),url(css3.png),url(js.png);
+    background-position: left, center, right;
+    background-repeat: no-repeat;
+    background-attachment: fixed;/*Siempre fija en el centro*/
+}
+body{
+    margin:0;
+    padding:0;
+}
+.manifesto h2{
+    text-align: center;
+}
+main{
+    background-color: rgba(20, 20, 20, .7);
+    color:white;
+    padding:5em;
+    margin: 2em 5em;
+    text-align: justify;
+
+}
+
+footer{
+    background-color: black;
+    color:white;
+    margin:0 auto;
+    padding:0;
+}
+.fa{
+    color:white;
+}

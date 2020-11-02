@@ -1,0 +1,530 @@
+* {
+  font-family: sans-serif;
+  font: 1.4em;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  background-color: #e2fbfb;
+  height: 100%;
+}
+
+/*INICIO CABECERA*/
+header {
+  text-align: center;
+  height: 80px;
+  background: #b0e9e9;
+}
+
+.logoHeader {
+  float: left;
+  position: static;
+  height: 80%;
+  margin: 0.5% 0% 0% 2%;
+}
+
+/* INICIO BARRA DE NAVEGACION */
+nav {
+  height: 100%;
+  width: 80%;
+  margin-left: 10%;
+}
+
+.sub-menu-parent {
+  position: relative;
+  width: 18%;
+  font-weight: bolder;
+
+}
+
+.sub-menu {
+  visibility: hidden; /* Oculto los submenus por defecto*/
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-2em);
+  z-index: -1;
+  transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s,
+    z-index 0s linear 0.01s;
+}
+
+.sub-menu-parent:focus .sub-menu,
+.sub-menu-parent:focus-within .sub-menu,
+.sub-menu-parent:hover .sub-menu {
+  visibility: visible; /* Muestro los submenus*/
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0%);
+  transition-delay: 0s, 0s, 0.3s;
+  transition-delay: 0s, 0s, 0.3s;
+  /* esto elimina el retraso de la transición para que el menú sea visible
+   mientras los otros estilos hacen la transición */
+}
+
+/* Estilo del menu*/
+nav a {
+  color: #78a7b3;
+  display: block;
+  padding: 1em 0em;
+  text-decoration: none;
+}
+/*Se cambia el color del texto de la pagina en la que nos encontramos*/
+nav .pagActiva{
+  color:#E4FDE4;
+}
+nav a:hover {
+  color: #8be68b;
+  
+}
+
+nav ul,
+nav ul li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav > ul {
+  /* background: #B0E9E9; */
+  text-align: center;
+  height: 100%;
+}
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li:first-child {
+  border-left: none;
+  margin-left: -10%;
+}
+.sub-menu-parent {
+  margin-top: 1.5%;
+}
+.sub-menu {
+  background: #E5ECFB;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+.sub-menu a:hover {
+  background: #8aa0d5;
+border-radius: 1em;
+}
+/*FIN BARRA NAVEGACION*/
+/*FIN CABECERA*/
+
+/*INICIO CONTENDIO*/
+main {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto;
+}
+/*INICIO BARA SOCIAL IZQUIERDA*/
+.social {
+  position: fixed; /* Hacemos que la posición en pantalla sea fija para que siempre se muestre en pantalla*/
+  left: 0; /* Establecemos la barra en la izquierda */
+  top: 200px; /* Bajamos la barra 200px de arriba a abajo */
+  z-index: 2000; /* Utilizamos la propiedad z-index para que no se superponga algún otro elemento como sliders, galerías, etc */
+}
+
+.social ul {
+  list-style: none;
+}
+
+.social ul li a {
+  display: inline-block;
+  color: #fff;
+  background: #000;
+  padding: 10px 15px;
+  text-decoration: none;
+  -webkit-transition: all 500ms ease;
+  -o-transition: all 500ms ease;
+  transition: all 500ms ease; /* Establecemos una transición a todas las propiedades */
+  width: 1em;
+}
+
+/* Establecemos los colores de cada red social, aprovechando su class */
+.social ul li .fa-facebook-square {
+  background: #3b5998;
+}
+.social ul li .fa-twitter {
+  background: #00abf0;
+}
+.social ul li .fa-instagram-square {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.social ul li .fa-pinterest-square {
+  background: #ae181f;
+}
+.social ul li .fa-envelope {
+  background: #666666;
+}
+
+.social ul li a:hover {
+  background: #000; /* Cambiamos el fondo cuando el usuario pase el mouse */
+  padding: 10px 30px; /* Hacemos mas grande el espacio cuando el usuario pase el mouse */
+}
+/*FIN BARRA SOCIAL IZQUIERDA*/
+
+
+/*INICIO HORARIO*/
+#horario table {
+  margin: 3% auto;
+  border-radius: 1em;
+}
+
+#horario table,
+td {
+  border-collapse: collapse;
+  text-align: center;
+  background-color: #d0dbf5;
+}
+.esquinaDerechaInferior {
+  border-bottom-right-radius: 1em;
+}
+
+.esquinaIzquierdaInferior {
+  border-bottom-left-radius: 1em;
+}
+
+#horario th,
+td {
+  padding: 1em;
+}
+
+/* INICIO colores tabla HORARIO */
+.asigDwec {
+  background-color: #c3b8f6;
+}
+
+.asigEie {
+  background-color: #ecb8f5;
+}
+
+.asigDwes {
+  background-color: #a6f5ee;
+}
+
+.asigLc {
+  background-color: #f5eba2;
+}
+
+.asigDiw {
+  background-color: #caf59a;
+}
+
+.asigDaw {
+  background-color: #f59f92;
+}
+/* FIN colores tabla HORARIO */
+/*FIN HORARIO*/
+
+/*INICIO FORMULARIO CONTACTANOS*/
+#formContact{
+  background-color: #8BE68B;
+  padding:1em;
+  border-radius: .5em;
+  margin:5% 10%;
+  font-size: 1em;
+  color:#E2FBFB;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 0px 27px 15px rgba(139,230,139,1);
+  -moz-box-shadow: 0px 0px 27px 15px rgba(139,230,139,1);
+  box-shadow: 0px 0px 27px 15px rgba(139,230,139,1);
+}
+
+#formContact h1{
+  text-align: center;
+}
+
+#formContact fieldset{
+  padding:1em;
+  width: 90%;
+  margin:auto;
+}
+
+#formContact label{
+  margin-left:.5em;
+}
+
+#formContact input[type=text], textarea {
+  width: 95%;
+  margin: .3em 0 1em .5em;
+  font-size: 1.2em;
+  padding:.2em;
+  border-radius: .5em;
+  border:1px solid #E4FDE4;
+}
+
+#formContact input[type=email]{
+  width: 46%;
+  margin: .3em .5em 1em .5em;
+  font-size: 1.2em;
+  padding:.2em .1em;
+  border-radius: .5em;
+  border:1px solid ;
+}
+#formContact input[type=number]{
+  width: 46%;
+  margin: .3em 0 1em 0em;
+  font-size: 1.2em;
+  padding:.2em .1em;
+  border-radius: .5em;
+  border:1px solid ;
+}
+#formContact .tlfn{
+  margin-left:42%;
+}
+.temasInteres{
+  margin-bottom: 1em;
+}
+
+.temasInteres legend{
+  text-align: center;
+}
+.temIzq{
+  float:left;
+  margin-left: 8%;
+}
+.temIzq input{
+  float:left;
+}
+
+.temDer{
+  float:right;
+  margin-right: 8%;
+}
+
+.temDer input{
+  float: left;
+}
+
+textarea{
+  padding:.5em;
+  width: 93.5%;
+  margin-left:2%;
+}
+.formButton{
+  margin-left: 25%;
+}
+
+.formButton {
+	box-shadow:inset 0px 1px 0px 0px #d9fbbe;
+	background:linear-gradient(to bottom, #b8e356 5%, #a5cc52 100%);
+	background-color:#b8e356;
+	border-radius:6px;
+	border:1px solid #83c41a;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #86ae47;
+}
+.formButton:hover {
+	background:linear-gradient(to bottom, #a5cc52 5%, #b8e356 100%);
+	background-color:#a5cc52;
+}
+.formButton:active {
+	position:relative;
+	top:1px;
+}
+
+        
+
+/*FIN FORMULARIO CONTACTANOS*/
+/*FIN CONTENDIO*/
+
+/*INICIO PIE*/
+footer {
+  background-color: #8aa0d5;
+  height: 300px;
+  color: #e4fde4;
+}
+footer a {
+  color: #e5ecfb;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #b0e9e9;
+}
+
+.pie,
+.pieLocalizacion {
+  width: 120px;
+  text-align: center;
+  margin-left: 11%;
+  float: left;
+  margin-top: 3em;
+  color: #e5ecfb;
+}
+
+.pie h4,
+.pieLocalizacion h4 {
+  margin-bottom: 1em;
+  color: #b8f4b8;
+}
+
+.pie li {
+  margin-bottom: 1em;
+}
+
+.pieLocalizacion li {
+  margin-bottom: 1.5em;
+  text-align: left;
+}
+.pieLocalizacion ul {
+  list-style-type: none;
+}
+
+.pieLocalizacion {
+  width: 200px;
+}
+.pieLocalizacion .fa-map-marked-alt,
+.fa-plane-departure {
+  margin-right: 1em;
+  font-size: 2em;
+}
+/*FIN PIE*/
+
+/* COLORES */
+/* CSS - Cascading Style Sheet */
+/* Palette color codes */
+/* Palette URL: http://paletton.com/#uid=53i0u0k7UUa3cZA5wXlaiQ5cFL3 */
+
+/* Feel free to copy&paste color codes to your application */
+
+/* As hex codes */
+
+.color-primary-0 {
+  color: #b0e9e9;
+} /* Main Primary color */
+.color-primary-1 {
+  color: #e2fbfb;
+}
+.color-primary-2 {
+  color: #c9f3f3;
+}
+.color-primary-3 {
+  color: #95dcdc;
+}
+.color-primary-4 {
+  color: #7bcccc;
+}
+
+.color-secondary-1-0 {
+  color: #b8f4b8;
+} /* Main Secondary color (1) */
+.color-secondary-1-1 {
+  color: #e4fde4;
+}
+.color-secondary-1-2 {
+  color: #cef9ce;
+}
+.color-secondary-1-3 {
+  color: #a1eea1;
+}
+.color-secondary-1-4 {
+  color: #8be68b;
+}
+
+.color-secondary-2-0 {
+  color: #b9c9ed;
+} /* Main Secondary color (2) */
+.color-secondary-2-1 {
+  color: #e5ecfb;
+}
+.color-secondary-2-2 {
+  color: #d0dbf5;
+}
+.color-secondary-2-3 {
+  color: #a1b5e2;
+}
+.color-secondary-2-4 {
+  color: #8aa0d5;
+}
+
+/* As RGBa codes */
+
+.rgba-primary-0 {
+  color: rgba(176, 233, 233, 1);
+} /* Main Primary color */
+.rgba-primary-1 {
+  color: rgba(226, 251, 251, 1);
+}
+.rgba-primary-2 {
+  color: rgba(201, 243, 243, 1);
+}
+.rgba-primary-3 {
+  color: rgba(149, 220, 220, 1);
+}
+.rgba-primary-4 {
+  color: rgba(123, 204, 204, 1);
+}
+
+.rgba-secondary-1-0 {
+  color: rgba(184, 244, 184, 1);
+} /* Main Secondary color (1) */
+.rgba-secondary-1-1 {
+  color: rgba(228, 253, 228, 1);
+}
+.rgba-secondary-1-2 {
+  color: rgba(206, 249, 206, 1);
+}
+.rgba-secondary-1-3 {
+  color: rgba(161, 238, 161, 1);
+}
+.rgba-secondary-1-4 {
+  color: rgba(139, 230, 139, 1);
+}
+
+.rgba-secondary-2-0 {
+  color: rgba(185, 201, 237, 1);
+} /* Main Secondary color (2) */
+.rgba-secondary-2-1 {
+  color: rgba(229, 236, 251, 1);
+}
+.rgba-secondary-2-2 {
+  color: rgba(208, 219, 245, 1);
+}
+.rgba-secondary-2-3 {
+  color: rgba(161, 181, 226, 1);
+}
+.rgba-secondary-2-4 {
+  color: rgba(138, 160, 213, 1);
+}
+
+/* Generated by Paletton.com © 2002-2014 */
+/* http://paletton.com */

@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Alinear formularios sin tablas</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<meta charset="utf-8" />
+</head>
+
+<body>
+
+	<h1>Alineación de formularios con CSS</h1>
+	<legend>Fomulario alineado
+		<form name="Formulario" method="post" action="ejemplo22.html" id="formulario">
+
+			<fieldset>
+				<label for="login">Login:</label>
+				<input name="login" value="" type="text" />
+			</fieldset>
+
+			<fieldset>
+				<label for="password">Password:</label>
+				<input name="password" value="" type="password" />
+			</fieldset>
+
+			<fieldset>
+				<label for="descripcion" >Descripción:</label>
+				<textarea name="descripcion" >Contenido inicial...
+			</textarea>
+			</fieldset>
+
+			<fieldset>
+				<label for="posesiones">Posesiones:</label>
+				<label for="posesion">Casa:</label>
+				<input name="posesion" value="casa" type="checkbox" />
+				<label for="posesion">Ordenador:</label>
+				<input name="posesion" value="ordenador" type="checkbox" />
+				<label for="posesion">Coche:</label>
+				<input name="posesion" value="coche" type="checkbox" />
+				<label for="posesion">Moto:</label>
+				<input name="posesion" value="moto" type="checkbox" />
+				<label for="posesion">Bicicleta:</label>
+				<input name="posesion" value="bicicleta" type="checkbox" />
+			</fieldset>
+
+			<fieldset>
+				<label for="sexo">Sexo:</label>
+				<label for="sexo">Hombre:</label>
+				<input name="sexo" value="hombre" type="radio" />
+				<label for="sexo">Mujer:</label>
+				<input name="sexo" value="mujer" type="radio" />
+			</fieldset>
+
+			<fieldset>
+				<input name="boton_submit" value="Enviar" type="submit" />
+				<input name="boton_vaciar" value="Vaciar" type="reset" />
+			</fieldset>
+
+		</form>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+article a{
+    font-size: 15pt;
+    border: 1px dotted orangered;
+}
+
+article img:first-child{
+    font-size:10pt;
+    font-style: italic;
+    border: 1px dashed darkred;
+}
+
+article p:last-child img{
+    font-size: 11pt;
+    border:1px dotted green;
+}

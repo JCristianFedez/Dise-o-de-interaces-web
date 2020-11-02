@@ -1,0 +1,36 @@
+body{
+    background-image: linear-gradient(360deg, lightgreen 50%,lightblue 75%);
+    height: 100%;
+    background-attachment: fixed;
+
+}
+.title{
+text-shadow: 2px 2px 0px hsla(140, 3%, 36%, 0.5);
+}
+
+p{
+    text-shadow: 4px 5px 0 hsla(0, 36%, 68%, 0.5);
+}
+a{
+    text-shadow: none;
+}
+div{
+    padding:1em;
+    margin: 1em;
+}
+.shady{
+box-shadow:4px 4px 4px green;
+background-image: linear-gradient(360deg, blue 50%,red 100%);
+background-attachment: fixed;
+}
+
+.shady2{
+box-shadow:-4px -4px 0px orangered;
+background-image: radial-gradient(yellow 4%,red  );
+
+}
+
+.shady3{
+box-shadow: 4px 0px 0px blue;
+background-image: repeating-linear-gradient(lightblue 20%, pink 50%);
+}

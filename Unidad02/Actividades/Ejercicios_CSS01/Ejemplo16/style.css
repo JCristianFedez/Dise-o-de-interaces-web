@@ -1,0 +1,18 @@
+fieldset{
+    border:0;
+}
+
+#formulario label{/*Parte mas importante, alinea todos los label*/
+display: inline-block;
+width: 100px;
+text-align: right;
+}
+#formulario input{
+display: inline-block;
+}
+
+#formulario textarea{
+    text-indent:4em;/*Sangria*/
+    padding-top:1em;
+    vertical-align:top;/*Alinea arriba el label*/
+}

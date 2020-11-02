@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diseño de Interfaces Web</title>
+    <link rel="shortcut icon" type="image/x-icon" href="Imagenes/favIcon.png" />
+    <link rel="stylesheet" href="Estilos/style.css" />
+    <link rel="stylesheet" href="fontawesome-free-5.15.1-web/css/all.min.css" />
+</head>
+
+<body>
+    <header>
+        <a href="#"><img src="Imagenes/logoHeader.png" alt="Logo" class="logoHeader" /></a>
+        <nav>
+            <ul>
+                <li class="sub-menu-parent"><a href="#" class="pagActiva">Inicio</a></li>
+                <li class="sub-menu-parent">
+                    <a href="">Ejercicios<i class="fas fa-sort-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="">Emmet</a></li>
+                        <li><a href="">CSS3</a></li>
+                        <li><a href="">Efectos CSS3</a></li>
+                        <li><a href="">Maquetacion CSS</a></li>
+                        <li><a href="">SASS</a></li>
+                        <li><a href="">BootStrap</a></li>
+                        <li><a href="">Otros</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu-parent">
+                    <a href="">Referencia<i class="fas fa-sort-down"></i></a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="https://www.w3schools.com/" target="_blank">W3School</a>
+                        </li>
+                        <li>
+                            <a href="https://css-tricks.com/" target="_blank">CSS-Tricks</a>
+                        </li>
+                        <li>
+                            <a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a>
+                        </li>
+                        <li><a href="">Otros</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu-parent">
+                    <a href="">Repositorios y Editores<i class="fas fa-sort-down"></i></a>
+                    <ul class="sub-menu">
+                        <li><a href="https://github.com/" target="_blank">Github</a></li>
+                        <li><a href="https://codepen.io/" target="_blank">CodePen</a></li>
+                        <li><a href="">Otros</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu-parent"><a href="subSites/contactUs.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- PANEL SOCIAL IZQUIERDA -->
+        <div class="social">
+            <ul>
+                <li>
+                    <a href="http://www.facebook.com" target="_blank" class="fab fa-facebook-square"></a>
+                </li>
+                <li>
+                    <a href="http://www.twitter.com" target="_blank" class="fab fa-twitter"></a>
+                </li>
+                <li>
+                    <a href="http://www.instagram.com" target="_blank" class="fab fa-instagram-square"></a>
+                </li>
+                <li>
+                    <a href="http://www.pinterest.com" target="_blank" class="fab fa-pinterest-square"></a>
+                </li>
+                <li>
+                    <a href="mailto:contacto@gmail.com" class="fas fa-envelope"></a>
+                </li>
+            </ul>
+        </div>
+        <div id="horario">
+            <table>
+                <caption>
+                    <h2>Horario 2ºDAW</h2>
+                </caption>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miercoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>16:00/17:00</td>
+                        <td rowspan="3" class="asigDwec">DWEC</td>
+                        <td rowspan="3" class="asigDwec">DWEC</td>
+                        <td rowspan="2" class="asigEie">EIE</td>
+                        <td rowspan="3" class="asigDwes">DWES</td>
+                        <td rowspan="3" class="asigLc">LC</td>
+                    </tr>
+                    <tr>
+                        <td>17:00/18:00</td>
+                    </tr>
+                    <tr>
+                        <td>18:00/19:00</td>
+                        <td rowspan="2" class="asigDiw">DIW</td>
+                    </tr>
+                    <tr>
+                        <td>19:00/20:00</td>
+                        <td rowspan="3" class="asigDwes">DWES</td>
+                        <td rowspan="3" class="asigDiw">DIW</td>
+                        <td class="asigDiw">DIW</td>
+                        <td rowspan="3" class="asigDaw esquinaDerechaInferior">DAW</td>
+                    </tr>
+                    <tr>
+                        <td>20:00/21:00</td>
+                        <td rowspan="2" class="asigDwes">DWES</td>
+                        <td rowspan="2" class="asigEie">EIE</td>
+                    </tr>
+                    <tr>
+                        <td class="esquinaIzquierdaInferior">21:00/22:00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <div class="pieLocalizacion">
+            <h4>Localizacion</h4>
+            <ul>
+                <li>
+                    <i class="fas fa-map-marked-alt"></i><a
+                        href="https://www.google.es/maps/place/Playa+de+la+Verga/@27.7726732,-15.6958356,17z/data=!3m1!4b1!4m5!3m4!1s0xc4081fdb4414743:0x79367cf3a1612bbd!8m2!3d27.7730528!4d-15.6953288"
+                        target="_blank">Donde estamos</a>
+                </li>
+                <li>
+                    <i class="fas fa-plane-departure"></i>
+                    <a href="https://www.expedia.es/Vuelos-Baratos-A-Vergas.d3000443883.Guia-Viajes-Vuelos"
+                        target="_blank">Visitanos</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="pie">
+            <h4>Mas de Nosotros</h4>
+            <ul>
+                <li>Jose</li>
+                <li>Cristian</li>
+            </ul>
+        </div>
+        <div class="pie">
+            <h4>Enlaces Interesantes</h4>
+            <ul>
+                <li><a href="https://paletton.com/" target="_blank">Palleton</a></li>
+                <li><a href="http://waifu2x.udp.jp/" target="_blank">Waifu2x</a></li>
+                <li>
+                    <a href="https://compressor.io/" target="_blank">Compressor.io</a>
+                </li>
+                <li><a href="https://unsplash.com/" target="_blank">Unsplash</a></li>
+                <li>
+                    <a href="https://www.genbeta.com/web/15-sitios-web-utiles-para-visitar-casi-a-diario-guardar-tus-favoritos-1"
+                        target="_blank">Mas...</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

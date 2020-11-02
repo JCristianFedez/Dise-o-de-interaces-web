@@ -1,0 +1,62 @@
+body{
+    margin:0;
+    padding:0;
+}
+#cabecera{
+    background-color: lightgreen;
+    padding: 1em;
+}
+
+li{
+    list-style-image: url(imagenes/iconmonstr-star-3.svg);
+
+}
+#lista1{
+    margin:0;
+    padding:0;
+    list-style: none;
+}
+
+#lista2{
+margin:0;
+padding:0;
+list-style: none;
+width: 10em;
+}
+
+#lista2 li{
+    border:1px solid black;
+    background-color: grey;
+}
+
+
+#lista3{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+#lista3 li{
+    background-color: grey;
+    display:inline-block;
+    padding:1px;
+    border:1px solid black;
+}
+#lista3 li:hover{
+    background-color: white;
+
+}
+
+#lista3 a{
+    color:white;
+    text-decoration: none;
+}
+#lista3 li a:hover{
+    color:black;
+}
+#pie{
+    background-color: green;
+    text-align: center;
+    width: 100%;
+    margin-top:5px;
+    
+}

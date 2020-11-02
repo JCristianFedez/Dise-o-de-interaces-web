@@ -1,0 +1,10 @@
+html{
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;/*Siempre fija en el centro*/
+}
+.manifesto{
+    background-color: rgba(20, 20, 20,.7);
+    color:white;
+}
