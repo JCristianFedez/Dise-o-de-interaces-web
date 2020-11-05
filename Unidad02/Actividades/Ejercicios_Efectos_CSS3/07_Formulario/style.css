@@ -1,0 +1,52 @@
+form{
+    background-color: #C2C2C2;
+    padding:1em;
+    border-radius: .5em;
+}
+form div{
+    text-align: right;
+}
+legend{
+    font-size: 2em;
+    padding:.5em 0em;
+}
+fieldset{
+    border:none;
+}
+
+label{
+    float:left;
+    width: 100px;
+    text-align: left;
+    font-size: 1.1em;
+    }
+
+input{
+    display: inline-block;
+    right: 0;
+    padding:.5em 0em .5em .5em;
+    width: 300px;
+}
+
+textarea{
+    vertical-align:top;/*Alinea arriba el label*/
+    width: 300px;
+    padding:0em 0em 0em .5em;
+}
+
+#email:focus,#email:hover{
+    background-color: #90EE8F;
+    border:2px solid blue;
+    border-radius: .5em;
+}
+#email:hover::placeholder,#email:focus::placeholder{
+    color:green;
+}
+#password:focus,#password:hover{
+    background-color:#CE5C5C;
+    border:2px solid red;
+    border-radius: .5em;
+}
+#password:hover::placeholder,#password:focus::placeholder{
+    color:darkred;
+}
