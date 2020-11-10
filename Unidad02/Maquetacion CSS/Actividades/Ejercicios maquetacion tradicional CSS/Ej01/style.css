@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+}
+
+/* h2{
+    text-align: center;
+} */
+
+nav{
+    display:table;
+/*     margin:0 auto;
+ */}
+
+ul{
+    display:table-row;
+}
+
+li{
+    list-style: none;
+    display:table-cell;
+    background-color: orange;
+    padding:1.5em;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;    
+}
+
+li:nth-child(2n){
+    background-color: green;
+}

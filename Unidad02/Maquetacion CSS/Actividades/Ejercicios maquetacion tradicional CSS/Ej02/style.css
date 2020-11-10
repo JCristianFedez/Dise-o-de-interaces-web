@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    position:fixed;
+    width: 600px;
+    height: 800px;
+    background-color: #87CEFA;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+
+header{
+    background-color: #FFA500;
+    padding:1em;
+}
+
+article{
+    background-color: #20B2AA;
+}
