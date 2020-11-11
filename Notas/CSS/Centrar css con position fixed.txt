@@ -1,0 +1,13 @@
+    centrado Horizontal:
+    left:50%;
+    transform: translateX(-50%);
+
+    centrado Vertical:
+    top:50%;
+    transform: translateY(-50%);
+
+
+    centrado Horizontal y Vertical
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);

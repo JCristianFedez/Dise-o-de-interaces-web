@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    position: fixed;
+    width: 60em;
+    height: 800px;
+    background-color: #87CEFA;
+    left:50%;
+    transform: translateX(-50%);
+    padding:20px;
+    overflow: auto;
+}
+
+header{
+    background-color: #FFA500;
+    padding:20px;
+    margin-bottom: 20px;
+}
+main{
+    height: calc(100% - 60px);
+}
+article{
+    padding-top:20px;
+    background-color: #20B2AA;
+    width:28em;/*Le POngo 28 para que quede bien, ya que le e puesto pading al container*/
+   /*  width:calc(50% - 10px); */
+     height: 100%;
+}
+
+article:first-of-type{
+    float:left;
+}
+article:last-of-type{
+    float:right;
+}

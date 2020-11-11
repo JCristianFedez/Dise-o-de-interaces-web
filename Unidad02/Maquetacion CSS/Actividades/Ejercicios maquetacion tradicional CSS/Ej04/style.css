@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: lightgray;
+}
+
+
+
+.columns{
+    column-width: 140px;
+    column-gap:3em;
+
+}
+
+.threecolumns{
+    margin-top:4em;
+    column-count:3;
+    column-gap: 3em;
+    column-rule: 4px dotted yellow;
+}

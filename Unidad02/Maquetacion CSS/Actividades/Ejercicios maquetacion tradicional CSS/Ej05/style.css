@@ -1,0 +1,39 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height:100%;
+}
+.container{
+    width: 100%;
+    height:calc(100% + 2em);
+}
+
+.sidebar{
+margin:1em;
+margin-right: 0em;
+background-color:yellow;
+height:calc(600px + 1em);
+width:20%;
+float:left;
+}
+
+article{
+    margin:1em 0em 1em 1em;
+height:300px;
+float:left;
+width:22%;
+background-color: red;
+
+}
+
+footer{
+    float:left;
+    width:calc(66% + 2em);
+    height:300px;
+    background-color: blue;
+    margin:0em 0em 1em 1em;
+}
