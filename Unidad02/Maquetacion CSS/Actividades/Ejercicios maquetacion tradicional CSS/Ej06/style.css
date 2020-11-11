@@ -1,62 +1,88 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0px;
-    padding:0px;
+    padding: 0px;
 }
 
-html,body{
+html,
+body {
     width: 100%;
     height: 100%;
 }
-.container{
-    height:100%;
-    
-}
-header h1{
-    text-align: center;
-    margin:.5em;
+
+.container {
+    height: 100%;
+
 }
 
-nav{
-    background-color:slateblue;
-    width:100%;
-    height:4em;
+header h1 {
+    text-align: center;
+    margin: .5em;
+}
+
+nav {
+    background-color: slateblue;
+    width: 100%;
+    height: 4em;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2em;
+}
+
+nav .menu-item {
+    float: left;
+    color: white;
+    padding: 0 5%;
+}
+
+.sidebar {
+    background-color: slateblue;
+    float: left;
+    height: 1300px;
+    min-height: 100%;
+    width: 16%;
+    min-width: 120px;
+
+}
+
+.sidebar .menu-item {
+    color: white;
+    padding: 1em;
+}
+
+section {    
+    display:flex;
+    justify-content: center; /*Horizontal*/
+    overflow: hidden;    /*Colocar en el contenedor del contenido para poner sidebar de tamaño completo*/
+}
+.courses{
     margin-bottom:1em;
 }
-nav .menu-item{
+.course{
     float:left;
-    color:white;
-    padding:0 5%;
-}
-
-.sidebar{
-    background-color:slateblue;
-    float:left;
-    height: 100%;
-    min-height: 100%;
-    width: 13%;
-}
-
-.sidebar .menu-item{
-    color:white;
+    border:1px solid black;
+    border-radius: .5em;
+    text-align:center;
+    width:30%;
+    overflow:hidden;
     padding:1em;
 }
 
-section{
-    float:right;
-    height: 100%;
-    width:calc(100% - 13%);
+.course img{
+    width: 50%;
 }
-footer{
-    clear:both;
-    position:relative;
+.articles article{
+    float:left;
+    width:30%;
+}
+footer {
+    clear: both;
+    position: relative;
     background-color: darkgray;
-    bottom:0;
+    bottom: 0;
     width: 100%;
     height: 4em;
-    padding:1em;
-    text-align:center;
+    padding: 1em;
+    text-align: center;
 }
