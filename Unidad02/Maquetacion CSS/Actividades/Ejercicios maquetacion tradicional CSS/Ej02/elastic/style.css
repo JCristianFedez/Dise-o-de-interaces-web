@@ -7,7 +7,7 @@
 .container{
     position: fixed;
     width: 60em;
-    height: 800px;
+    height: 600px;
     background-color: #87CEFA;
     left:50%;
     transform: translateX(-50%);
