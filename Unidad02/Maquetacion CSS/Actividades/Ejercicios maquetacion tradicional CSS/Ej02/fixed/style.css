@@ -6,8 +6,8 @@
 
 .container{
     position: fixed;
-    width: 600px;
-    height: 800px;
+    width: 800px;
+    height: 600px;
     background-color: #87CEFA;
     left:50%;
     transform: translateX(-50%);
@@ -28,7 +28,7 @@ article{
     background-color: #20B2AA;
     width:calc(50% - 10px);
 /*     height: 100%*/
-    height: 700px;
+    height: 500px;
 }
 
 article:first-of-type{
