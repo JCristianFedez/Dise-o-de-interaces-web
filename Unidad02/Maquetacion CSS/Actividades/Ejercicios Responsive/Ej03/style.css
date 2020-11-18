@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+}
+
+.red,.blue{
+    height: 150px;
+    float:left;
+    width: calc(100%/1);
+}
+.red{
+    background-color: red;
+    display: none;
+}
+.blue{
+    background-color: blue;
+}
+
+@media (min-width:768px){/*Cuando sea mayor a 768*/
+    .red{
+        display: inline-block;
+    }
+    .red,.blue{
+        width: calc(100%/2);
+    }
+}

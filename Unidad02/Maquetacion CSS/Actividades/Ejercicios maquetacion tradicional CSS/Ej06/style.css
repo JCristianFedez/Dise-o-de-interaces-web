@@ -65,6 +65,7 @@ section {
     border-radius: .5em;
     text-align:center;
     width:30%;
+    min-width: 100px;
     overflow:hidden;
     padding:1em;
 }
@@ -75,6 +76,7 @@ section {
 .articles article{
     float:left;
     width:30%;
+    min-width: 100px;
 }
 footer {
     clear: both;

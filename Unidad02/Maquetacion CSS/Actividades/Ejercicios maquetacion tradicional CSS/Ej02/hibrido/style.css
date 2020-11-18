@@ -21,11 +21,13 @@ header{
 }
 main{
     height: calc(100% - 60px);
+    min-width: 300px;
 }
 article{
     padding-top:20px;
     background-color: #20B2AA;
     width:calc(50% - 10px);
+    min-width: 140px;
     height: 100%;
 }
 

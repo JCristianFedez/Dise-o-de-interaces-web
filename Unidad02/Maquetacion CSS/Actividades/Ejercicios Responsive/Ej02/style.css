@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+}
+
+.container{
+    padding:1em;
+}
+
+.red,.blue,.yellow{
+    height: 150px;
+    float:left;
+}
+
+.red{
+    background-color: red;
+    width: 20%;
+}
+
+.blue{
+    background-color: blue;
+    width: 50%;
+}
+
+.yellow{
+    background-color: yellow;
+    width: 30%;
+}
+
+@media (max-width:992px) and (min-width:576.1px){/*Menores a 992*/
+.red,.blue{
+    width: 50%;
+}
+.yellow{
+    clear:both;
+    width: 100%;
+}
+}
+
+@media(max-width:576px){/*Menores a 576*/
+    .red,.blue,.yellow{
+        height: 150px;
+        clear:both;
+        width: 100%;
+    }
+}
