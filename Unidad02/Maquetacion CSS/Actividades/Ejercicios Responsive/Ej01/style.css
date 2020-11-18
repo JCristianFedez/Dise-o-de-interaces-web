@@ -20,6 +20,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-align: center;
 }
 
 .red {
@@ -34,7 +35,7 @@ header {
     background-color: green;
 }
 
-@media (min-width:567px) and (max-width:932.9px) {
+@media screen and (min-width:576px) and (max-width:932.9px) {
     /* Mayores a 567 px y Menores a 933*/
     header{
         color:green;
@@ -49,15 +50,18 @@ header {
     }
 }
 
-@media (min-width:933px) {
+@media screen and (min-width:933px) {
     /* Mayores a 933px*/
-    header{
-        color:green;
-        background-color: orange;
-    }
     .red,.blue,.green{
         float:left;
         width: calc(100% / 3);
     }
 
+}
+
+@media screen and (orientation:landscape){
+    header{
+        background-color: orange;
+        color:green;
+    }
 }
