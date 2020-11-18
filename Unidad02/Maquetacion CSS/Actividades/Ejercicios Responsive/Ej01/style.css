@@ -35,7 +35,7 @@ header {
     background-color: green;
 }
 
-@media screen and (min-width:576px) and (max-width:932.9px) {
+@media screen and (min-width:576px) and (max-width:932px) {
     /* Mayores a 567 px y Menores a 933*/
     header{
         color:green;
