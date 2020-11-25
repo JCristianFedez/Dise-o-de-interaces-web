@@ -1,0 +1,4 @@
+/* flex:1 0 300px; */
+    flex-grow: 1;
+    flex-flow: 0;
+    flex-basis: 300px;/*widht minimo*/
