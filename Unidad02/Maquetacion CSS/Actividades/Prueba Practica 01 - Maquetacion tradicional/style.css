@@ -11,8 +11,8 @@ body {
 header {
   position: sticky;
   top: 0;
-  background: linear-gradient(90deg, rgba(0,2,62,1) 0%, rgba(0,38,33,1) 100%);
-  color:lightblue;
+  background: linear-gradient(90deg, rgba(0, 2, 62, 1) 0%, rgba(0, 38, 33, 1) 100%);
+  color: lightblue;
   padding: 1em;
   height: 3em;
   z-index: 100;
@@ -27,7 +27,7 @@ header>nav>ul>li {
 header>nav ul>li>a {
   text-decoration: none;
   margin: 0 .5em;
-  color:lightblue;
+  color: lightblue;
   padding: .5em;
 }
 
@@ -94,9 +94,9 @@ h2:first-of-type {
 .imgInfo {
   background-color: pink;
   width: 80%;
-  height: 300px;
+  height: 400px;
   margin: 2em auto;
-  min-width: 550px;
+  min-width: 500px;
   position: relative;
 }
 
@@ -122,30 +122,28 @@ h2:first-of-type {
 .photoGalery {
   background-color: pink;
   width: 80%;
-  height: 500px;
+  height: 1300px;
   margin: 2em auto;
-  min-width: 550px;
+  min-width: 500px;
 }
 
 .photoGalery>h2 {
+  padding-top:1em;
   text-align: center;
 }
 
 .photoGalery>.myPhoto {
   /* background-color: green; */
   width: 100%;
-  margin:0 auto;
+  margin: 0 auto;
   height: 100%;
   text-align: center;
 }
 
 .photoGalery>.myPhoto>img {
-  /* background-color: red; */
-  height: 75px;
-  max-width: 300px;
-  min-width: 200px;
+  height: 120px;
   margin: 1em;
-  width:calc((90%/4) - 2em);
+  width: 80%;
 }
 
 footer {
@@ -191,24 +189,48 @@ footer>ul:nth-of-type(3)>li>i {
 @media screen and (min-width:576px) {
 
   /* Mayores a 567 px*/
-  .imgInfo {
-    /* background-color: red; */
+  .photoGalery {
+    height: 725px;
   }
+
+  .photoGalery>.myPhoto>img {
+    height: calc(80%4);
+    width: calc(80%/2);
+  }
+
 
 }
 
 @media screen and (min-width:768px) {
-  /* Mayores a 768 px*/
 
+  /* Mayores a 768 px*/
+  .imgInfo {
+    background-color: blue;
+    height: 350px;
+  }
 }
 
 @media screen and (min-width:992px) {
+
   /* Mayores a 992 px*/
-
-
+  .imgInfo {
+    background-color: green;
+    height: 300px;
+  }
+  .photoGalery{
+    height: 850px;
+  }
+  .photoGalery>.myPhoto>img {
+    height: calc(80%/3);
+    width: calc(80%/3);
+  }
 }
 
 @media screen and (min-width:1200px) {
-  /* Mayores a 1200 px*/
 
+  /* Mayores a 1200 px*/
+  .imgInfo {
+    background-color: yellow;
+    height: 300px;
+  }
 }
