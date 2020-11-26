@@ -162,7 +162,7 @@ footer>ul {
   margin-top: 1em;
   list-style: none;
   color: rgb(198, 238, 231);
-  background-color: red;
+  /* background-color: red; */
 }
 
 footer>ul:nth-of-type(1) {
