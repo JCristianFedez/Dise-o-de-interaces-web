@@ -192,7 +192,7 @@ footer>ul:nth-of-type(3)>li>i {
 
   /* Mayores a 567 px*/
   .imgInfo {
-    background-color: red;
+    /* background-color: red; */
   }
 
 }
