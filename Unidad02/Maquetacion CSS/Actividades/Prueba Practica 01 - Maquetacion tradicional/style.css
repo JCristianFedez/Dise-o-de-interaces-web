@@ -5,34 +5,39 @@
 }
 
 body {
-    background: linear-gradient(180deg, rgba(174,198,195,1) 0%, rgba(29,37,253,0.5074404761904762) 100%);
-
+  background: linear-gradient(180deg, rgba(174, 198, 195, 1) 0%, rgba(29, 37, 253, 0.5074404761904762) 100%);
 }
 
 header {
-    position: sticky;
-    top: 0;
-  background: linear-gradient(90deg, rgba(188,174,198,1) 0%, rgba(29,210,253,1) 100%);  padding: 1em;
+  position: sticky;
+  top: 0;
+  background: linear-gradient(90deg, rgba(0,2,62,1) 0%, rgba(0,38,33,1) 100%);
+  color:lightblue;
+  padding: 1em;
   height: 3em;
   z-index: 100;
+  width: 100vw;
 }
 
-header > nav > ul > li {
+header>nav>ul>li {
   float: left;
   list-style: none;
 }
 
-header > nav ul > li > a {
+header>nav ul>li>a {
   text-decoration: none;
-  padding: 0 0.5em;
+  margin: 0 .5em;
+  color:lightblue;
+  padding: .5em;
 }
 
-header > .search {
+header>.search {
   float: right;
+  margin-right: 10px;
 }
 
 .imgBig {
-    background-image: url(https://www.sdxcentral.com/wp-content/uploads/2020/03/Google-Cloud-Careens-Into-Mobile-Operator-Landscape.jpg);
+  background-image: url(https://www.sdxcentral.com/wp-content/uploads/2020/03/Google-Cloud-Careens-Into-Mobile-Operator-Landscape.jpg);
   position: relative;
   background-repeat: no-repeat;
   /* background-color: green; */
@@ -54,13 +59,11 @@ header > .search {
   padding: 0.5em;
 }
 
-.contactUs > button {
+.contactUs>button {
   bottom: 0px;
-  background: linear-gradient(
-    90deg,
-    rgba(131, 58, 180, 1) 0%,
-    rgba(29, 210, 253, 1) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(131, 58, 180, 1) 0%,
+      rgba(29, 210, 253, 1) 100%);
   padding: 1em;
   width: 80%;
   margin-top: 1em;
@@ -70,6 +73,7 @@ h2:first-of-type {
   margin-top: 1em;
   text-align: center;
 }
+
 .galeriaImg {
   /* background-color: orange; */
   width: 80%;
@@ -79,7 +83,7 @@ h2:first-of-type {
   min-width: 550px;
 }
 
-.galeriaImg > img {
+.galeriaImg>img {
   background-color: green;
   display: inline-block;
   width: calc((100% / 3) - 50px);
@@ -96,7 +100,7 @@ h2:first-of-type {
   position: relative;
 }
 
-.imgInfo > img {
+.imgInfo>img {
   /* background-color: blue; */
   height: 80%;
   width: 35%;
@@ -104,72 +108,108 @@ h2:first-of-type {
   margin: 1.5em;
 }
 
-.imgInfo > .myP {
+.imgInfo>.myP {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   margin-left: 40%;
 }
 
-.imgInfo > .myP > p {
+.imgInfo>.myP>p {
   margin: 1em;
 }
 
 .photoGalery {
-  /* background-color: pink; */
+  background-color: pink;
   width: 80%;
-  height: 250px;
+  height: 500px;
   margin: 2em auto;
   min-width: 550px;
-  position: relative;
 }
 
-.photoGalery > h2 {
+.photoGalery>h2 {
   text-align: center;
 }
 
-.photoGalery>.myPhoto{
-    /* background-color: green; */
-    text-align: center;
-}
-.photoGalery>.myPhoto>img{
-    /* background-color: red; */
-    height: 75px;
-    width:calc((90%/4) - 2em);
-    max-width: 300px;
-    margin: 1em;
+.photoGalery>.myPhoto {
+  /* background-color: green; */
+  background-color: green;
+  width: 100%;
+  margin:0 auto;
+  height: 100%;
+  text-align: center;
 }
 
-footer{
-    position: relative;
-    bottom: 0px;
-    width: 100%;
-    height: 80px;
-    background-color: rgb(44, 44, 68);
-    min-width: 700px;
-    z-index: 100;
+.photoGalery>.myPhoto>img {
+  /* background-color: red; */
+  height: 75px;
+  max-width: 300px;
+  min-width: 200px;
+  margin: 1em;
+  width:calc((90%/4) - 2em);
 }
 
-footer>ul{
-    margin-top:1em;
-    list-style: none;
-    color: rgb(198, 238, 231);
+footer {
+  position: relative;
+  bottom: 0px;
+  width: 100vw;
+  height: 120px;
+  padding: 1em;
+  background-color: rgb(44, 44, 68);
+  z-index: 100;
 }
-footer>ul:nth-of-type(1){
-    /* background-color: blue; */
-    float: left;
-}
-footer>ul:nth-of-type(2){
-    margin-left: 1em;
-    /* background-color: red; */
 
-    float: left;
+footer>ul {
+  margin-top: 1em;
+  list-style: none;
+  color: rgb(198, 238, 231);
+  background-color: red;
 }
-footer>ul:nth-of-type(3){
-    /* background-color: green; */
-    float: right;
+
+footer>ul:nth-of-type(1) {
+  /* background-color: blue; */
+  float: left;
 }
-footer>ul:nth-of-type(3)>li>i{
-    /* background-color: green; */
-    margin: .5em;
+
+footer>ul:nth-of-type(2) {
+  margin-left: 1em;
+  /* background-color: red; */
+
+  float: left;
+}
+
+footer>ul:nth-of-type(3) {
+  /* background-color: green; */
+  float: right;
+}
+
+footer>ul:nth-of-type(3)>li>i {
+  /* background-color: green; */
+  margin: .5em;
+  font-size: 2em;
+}
+
+@media screen and (min-width:576px) {
+
+  /* Mayores a 567 px*/
+  .imgInfo {
+    background-color: red;
+  }
+
+}
+
+@media screen and (min-width:768px) {
+  /* Mayores a 768 px*/
+
+}
+
+@media screen and (min-width:992px) {
+  /* Mayores a 992 px*/
+
+
+}
+
+@media screen and (min-width:1200px) {
+  /* Mayores a 1200 px*/
+
 }
