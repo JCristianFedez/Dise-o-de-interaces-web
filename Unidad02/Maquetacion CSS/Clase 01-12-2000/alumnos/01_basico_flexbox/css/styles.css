@@ -1,0 +1,137 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    background: #D4C26A;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #D4C26A, #FFF0AA);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #D4C26A, #FFF0AA);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.header-sitio {
+    background-color: #152C55;
+    padding: 0 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+}
+
+@media screen and (min-width:768px) {
+    .header-sitio {
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+}
+
+.header-sitio h1 {
+    color: white;
+}
+
+nav {}
+
+nav a,
+aside a {
+    color: white;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+}
+
+.contenedor {
+    background-color: white;
+    min-height: calc(100vh - 20px);
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px 30px 0 30px;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-family: 'Roboto Mono', monospace;
+}
+
+h2 {
+    color: white;
+}
+
+.contenedor-flex {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+
+@media screen and (min-width:768px) {
+    .contenedor-flex {
+        flex-flow: row wrap;
+    }
+}
+
+.principal {}
+
+aside {
+    order: -1;
+    flex: 1;
+    margin-bottom: 15px;
+}
+
+aside {
+    background-color: #152C55;
+}
+
+@media screen and (min-width:768px) {
+    .principal {
+        flex: 0 1 60%;
+        margin-right: 15px;
+    }
+
+    aside {
+        flex: 1;
+        order: 0;
+    }
+}
+
+
+
+.servicios .servicio {}
+
+@media screen and (min-width:768px) {
+    .servicios {
+        display: flex;
+        flex-flow: row wrap;
+    }
+    .servicios .servicio {
+        flex:1;
+
+    }
+}
+
+.servicio {
+    padding: 5px;
+    background-color: #AA6639
+}
+
+
+.servicio:nth-child(2) {
+    background-color: #7688A9;
+}
+
+.servicio:nth-child(3) {
+    background-color: #4D648D
+}
+
+footer {
+    height: 100px;
+    background-color: #7688A9;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer p {
+    color: white;
+}

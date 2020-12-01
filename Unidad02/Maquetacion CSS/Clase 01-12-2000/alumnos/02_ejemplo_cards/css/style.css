@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+.contenedor {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.contenido-principal {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+h2 {
+    font-family: "Noto Serif", serif;
+    flex: 0 1 100%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: "Noto Serif", serif;
+    margin: 0;
+    font-weight: 600;
+}
+
+.entrada {
+    margin: 10px;
+}
+
+@media screen and (min-width: 480px) {
+    .contenido-principal {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .entrada {
+        flex: 0 1 calc((100% / 2) - 20px);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .entrada {
+        flex: 0 1 calc((100% / 3) - 20px);
+    }
+}
+
+.contenido {
+    text-align: center;
+    background-color: white;
+    text-transform: uppercase;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contenido span {
+    color: #db008d;
+}
+
+.contenido h3 {
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.contenido p {
+    font-family: "Noto Sans", sans-serif;
+    font-size: .9rem;
+}
+
+.boton {
+    background-color: #008FD1;
+    color: white;
+    text-decoration: none;
+    padding: .6rem 2rem; 
+    margin-top:1rem;
+    display: inline-block;
+    border-radius: .5rem;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test REM y EM</title>
+    <style>
+      html {
+        font-size: 20px;
+      }
+      p {
+        font-size: 1.4rem;
+        padding: 2rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+
+      .wrapper1 {
+        font-size: 10px;
+      }
+
+      .wrapper1 p {
+        font-size: 1.4em;
+      }
+
+      .wrapper2 {
+        font-size: 10px;
+      }
+
+      .wrapper2 p {
+          font-size: 1.4em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Titulo</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero,
+      similique.
+    </p>
+
+    <div class="wrapper1">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt at
+        expedita cum dicta doloremque dolorum, aperiam laudantium corporis
+        ratione. Cumque.
+      </p>
+    </div>
+
+    <div class="wrapper1">
+      <div class="wrapper2">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt at
+          expedita cum dicta doloremque dolorum, aperiam laudantium corporis
+          ratione. Cumque.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
