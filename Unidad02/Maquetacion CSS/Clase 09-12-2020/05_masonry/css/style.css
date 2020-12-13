@@ -1,0 +1,45 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+
+.blog{
+    display: flex;
+    flex-flow: column wrap;
+    height: 2500px;
+}
+
+.entrada{
+    display: flex;
+    flex-direction: column;
+    flex:0 0 auto;
+    width: calc(100%/3);
+
+}
+
+.entrada img{
+    max-width: 100%;
+}
+
+
+
+/* PARTE ESTETICA */
+.contenedor h1{
+    text-align: center;
+}
+
+.blog{
+    width: 80vw;
+    margin:0 auto;
+}
+
+.entrada{
+    margin:.5rem;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+}
+
+.entrada .contenido{
+    margin:.5rem;
+}
