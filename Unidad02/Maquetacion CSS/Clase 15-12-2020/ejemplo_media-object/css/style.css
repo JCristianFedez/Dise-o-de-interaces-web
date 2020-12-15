@@ -1,0 +1,37 @@
+html{
+    box-sizing: border-box;
+}
+
+*,*::before,*::after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: lightskyblue;
+}
+
+h2{
+    text-align: center;
+}
+
+.contenedor-principal{
+    max-width: 800px;
+    margin:0 auto;
+    background-color: aliceblue;
+    padding:2rem;
+}
+
+.contenedor-comentario{
+    display:flex;
+    align-items:flex-start;
+}
+
+.contenedor-comentario .avatar{
+margin-right:1rem;
+}
+
+.nivel2{
+    background-color: rgb(189, 236, 189);
+    padding:1rem;
+}

@@ -1,0 +1,42 @@
+html{
+    box-sizing: border-box;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+    margin:0;
+    padding:0;
+}
+.pagina{
+    display: flex;/*Importante*/
+    flex-direction: column;/*Importante*/
+    min-height: 100vh;/*Importante*/
+}
+.contenido-principal{
+    flex:1;/*Importante*/
+}
+
+/*Decoracion*/
+.pagina{
+    background-color: lightskyblue;
+    font-family: sans-serif;
+}
+
+h2,h1{
+    text-align: center;
+}
+
+.encabezado{
+    background-color: rgba(128, 128, 0, 0.438);
+}
+
+.contenido-principal{
+    background-color: rgba(0, 139, 139, 0.616);
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.pie{
+    background-color: rgb(0, 0, 73);
+    color:rgb(130, 202, 130);
+}
