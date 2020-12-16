@@ -1,19 +1,28 @@
+div:nth-child(1) {
+  background-color: red;
+}
+
+div:nth-child(2) {
+  background-color: green;
+}
+
+div:nth-child(3) {
+  background-color: blue;
+}
+
 .mitad {
   width: 512px;
   height: 1rem;
-  background-color: red;
 }
 
 .cuarto {
   width: 256px;
   height: 1rem;
-  background-color: green;
 }
 
 .octavo {
   width: 128px;
   height: 1rem;
-  background-color: blue;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,22 +1,25 @@
 $ancho:1024px;
+$colors:(red,green,blue);
 
-// @for $i from 1  through 3{
-    
-// }
+@for $i from 1  through 3{
+    div:nth-child(#{$i}){
+        background-color: nth($colors, $i);
+    }
+}
 
 
 .mitad{
     width: $ancho/2;
     height: 1rem;
-    background-color: red;
+    // background-color: red;
 }
 .cuarto{
     width: $ancho/4;
     height: 1rem;
-    background-color: green;
+    // background-color: green;
 }
 .octavo{
     width: $ancho/8;
     height: 1rem;
-    background-color: blue;
+    // background-color: blue;
 }
