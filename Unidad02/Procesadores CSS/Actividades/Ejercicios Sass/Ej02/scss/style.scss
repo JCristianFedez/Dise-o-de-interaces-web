@@ -1,0 +1,14 @@
+$backgroundColor:rgb(47, 177, 112);
+$fontSize:1.4rem;
+$h1Size:2rem;
+$colorH1:#577db9;
+
+body{
+    background-color: $backgroundColor;
+    font-size: $fontSize;
+}
+
+h1{
+    font-size: $h1Size;
+    color:$colorH1;
+}

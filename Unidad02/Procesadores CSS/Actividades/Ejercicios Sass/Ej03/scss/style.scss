@@ -1,0 +1,22 @@
+$ancho:1024px;
+
+// @for $i from 1  through 3{
+    
+// }
+
+
+.mitad{
+    width: $ancho/2;
+    height: 1rem;
+    background-color: red;
+}
+.cuarto{
+    width: $ancho/4;
+    height: 1rem;
+    background-color: green;
+}
+.octavo{
+    width: $ancho/8;
+    height: 1rem;
+    background-color: blue;
+}
