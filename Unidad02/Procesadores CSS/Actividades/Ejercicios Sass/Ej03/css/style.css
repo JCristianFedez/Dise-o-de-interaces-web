@@ -1,13 +1,13 @@
-div:nth-child(1) {
-  background-color: red;
+div:nth-child(3n+1) {
+  background: red;
 }
 
-div:nth-child(2) {
-  background-color: green;
+div:nth-child(3n+2) {
+  background: green;
 }
 
-div:nth-child(3) {
-  background-color: blue;
+div:nth-child(3n+3) {
+  background: blue;
 }
 
 .mitad {

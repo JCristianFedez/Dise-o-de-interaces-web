@@ -1,10 +1,10 @@
 $ancho:1024px;
 $colors:(red,green,blue);
 
-@for $i from 1  through 3{
-    div:nth-child(#{$i}){
-        background-color: nth($colors, $i);
-    }
+@for $i from 1 through length($colors) {
+	div:nth-child(#{length($colors)}n+#{$i}) {
+		background: nth($colors, $i);
+	}
 }
 
 
