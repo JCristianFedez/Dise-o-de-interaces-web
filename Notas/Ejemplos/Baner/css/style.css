@@ -9,12 +9,12 @@ html{
 }
 
 .centrado{
-    background-image: url("../img/hamburguesa.jpg");
+    background-image: url("https://image.freepik.com/free-vector/luxury-abstract-background-banner-black-gold-colors_64718-293.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size:cover;
     min-width: 100vw;
-    min-height:100vh;
+    min-height:300px;
 
     display: flex;
     justify-content: center;

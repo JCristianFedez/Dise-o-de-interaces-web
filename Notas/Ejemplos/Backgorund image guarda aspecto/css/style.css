@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.img-container {
+    background: #524E4D;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5em;
+}
+
+.img-item {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    background-image: url(http://txgarage.com/images/2015/01/sonata-top-shot.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center center;
+
+    transition: all .3s ease;
+
+    border-bottom: 5px solid #852729;
+    box-shadow: 0px 0px 18px 5px #333;
+}
+
+.img-item:hover {
+    background-size: 110%;
+    /* background-position: bottom right; */
+
+}
+
+.img-item:hover .img-picture {
+    background: rgba(255, 255, 255, 0.0);
+}
+
+.img-picture {
+    padding-top: 55%;
+    /* 4:3 aspect ratio */
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.img-definition {
+    position: absolute;
+    /* top: 0; */
+    bottom: 0;
+    left: 0;
+    /* right: 0; */
+    background-color: #852729;
+    padding: .5em 1.5em;
+    color: #fff;
+}
