@@ -1,0 +1,363 @@
+@font-face {
+    font-family: "AndikaNewBasic-Bold";
+    src: url("../fonts/AndikaNewBasic-Bold.ttf");
+}
+@font-face {
+    font-family: "AndikaNewBasic-Regular";
+    src: url("../fonts/AndikaNewBasic-Regular.ttf");
+}
+@font-face {
+    font-family: "Padauk-regular";
+    src: url("../fonts/Padauk-Regular.ttf");
+}
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+:root{
+    --green:#71B100;
+    --orange:#E08709;
+    --nav-hover:#0d1646;
+    --footer-grey:#a8a8a8;
+}
+
+ body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+ }
+header{
+    padding: 1rem;
+    background-image: url("../img/header.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size:cover;
+
+    max-height: 100vh;
+    min-height:100vh;
+    position: relative;
+}
+@media screen and (min-width:768px){
+    header{
+        min-height: 100vh;
+    }
+}
+.conenido{
+    flex:1;/*Importante*/
+}
+.center{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+}
+h1,h2,.hr-enlace{
+    font-family: "AndikaNewBasic-Bold", sans-serif;
+}
+
+.mn-sub-enlace-full,.mn-sub-enlace,h3,h4{
+    font-family: "AndikaNewBasic-Regular", sans-serif;
+}
+p{
+    font-family: "Padauk-regular", sans-serif;
+}
+
+.hr-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (min-width:768px){
+    .hr-container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .tecnoImg{
+        width: 30%;
+    }
+}
+header .svg-burger{
+    width: 2rem;
+    margin-top: 1rem;
+}
+@media screen and (min-width:768px){
+    header .svg-burger{
+        display: none;
+    }
+}
+.hr-enlace-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (min-width:768px){
+    .hr-enlace-container{
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.hr-enlace{
+    padding: 1rem;
+    color:white;
+    font-size: 1.4rem;;
+}
+@media screen and (min-width:768px){
+    .hr-enlace{
+       text-align: right;
+    }
+}
+
+.hr-enlace:hover{
+    color:var(--nav-hover);
+}
+.hr-box{
+    background-color: rgba(0, 0, 0, 0.500);
+    margin: 1rem;
+    color:white;
+    padding:1rem;
+    text-align: center;
+}
+@media screen and (min-width:768px){
+    .hr-box{
+       position: absolute;
+       bottom: 1rem;
+       left: 1rem;
+       width: 30%;
+       text-align: left;
+    }
+}
+.mn-about-us{
+text-align: center;
+padding: 1rem;
+}
+@media screen and (min-width:768px){
+    .mn-about-us{
+        display: flex;
+    }
+
+}
+.mn-about-us-item{
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    margin:1rem;
+}
+
+.mn-about-us-item h2{
+    margin: 1.5rem;
+}
+
+.mn-houses{
+    padding: 1rem;
+}
+@media screen and (min-width:768px){
+    .mn-houses{
+        display: flex;
+    }
+}
+.mn-houses-item{
+    border:1px solid grey;
+    margin-top: 1rem;
+    background-color: rgba(211, 211, 211, 0.418);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@media screen and (min-width:768px){
+    .mn-houses-item{
+        margin:.5rem;
+    }
+}
+.mn-houses-item img{
+    max-width: 100%;
+}
+
+.mn-houses-description{
+    padding: 1rem;
+}
+
+.mn-houses-description h2 {
+    padding-bottom: 1rem;
+}
+.mn-houses-description p {
+    padding-bottom: 1rem;
+}
+
+.mn-house-price{
+    text-align: right;
+    color: var(--green);
+}
+
+.mn-houses-icons{
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.mn-houses-icons span{
+position: absolute;
+top:0;
+margin-left: 1rem;
+}
+
+.mn-sub-enlace{
+    display: block;
+    background-color: var(--orange);
+    color:white;
+    margin-top:1rem;
+    padding:1rem;
+    text-align: center;
+}
+
+.mn-sub-enlace-full{
+    display: block;
+    background-color: var(--orange);
+    color:white;
+    margin:1rem 1rem 2rem 1rem;
+    text-align: center;
+    padding:1rem;
+    background-color: var(--green);
+}
+
+@media screen and (min-width:768px){
+    .mn-sub-enlace-full{
+        width: 20%;
+    }
+}
+.mn-dreams{
+    background-image: url("../img/encuentra.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size:cover;
+    min-height:500px;
+
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding:1rem;
+}
+@media screen and (min-width:768px){
+    .enlace-dreams{
+        width: 20%;
+    }
+}
+.mn-our-blog{
+    margin-top:1rem;
+    padding:1rem;
+}
+
+.mn-our-blog h1{
+    text-align: center;
+}
+
+.mn-our-blog-item img{
+width: 100%;
+}
+.mn-our-blog-item{
+    margin-top: 1rem;
+}
+
+.mn-our-blog-item p,.mn-our-blog-item h2{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.blog-orange-text{
+    color:var(--orange)
+}
+.our-blog-green-line{
+    background-color: var(--green);
+    width: 25%;
+    height: .5rem;
+    margin-bottom: 1rem;
+}
+
+.mn-testimonios{
+    text-align: justify;
+}
+.mn-testimonios h1{
+    text-align: center;
+}
+.mn-testimonios-coment{
+    border-radius: 1rem;
+    background-color: var(--green);
+    color:white;
+    padding:2rem;
+    font-size: 1.5rem;
+    display: flex;
+}
+.mn-testimonios-coment p{
+    line-height: 2;
+}
+.mn-testimonios-coment .svg-comillas{
+    padding-right: 1rem;
+    align-self: flex-start;
+}
+.mn-testimonio-wirter{
+text-align: right;
+}
+@media screen and (min-width:768px){
+    .blog-testimonio{
+        overflow-y: hidden;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: stretch;
+        padding: 1rem;
+    }
+    .mn-testimonios{
+        flex:2;
+        margin-top:2rem;
+        margin:1rem;
+    }
+
+    .mn-our-blog{
+        flex:3;
+        display: flex;
+        flex-direction: column;
+    }
+    .mn-our-blog-item{
+        display: flex;
+
+    }
+    .blog-item-description{
+        margin-left: 1rem;
+    }
+    .mn-our-blog-item img{
+        width: 30%;
+        }
+}
+.ft-container{
+    background-color: var(--footer-grey);
+    margin-top:1rem;
+}
+
+.ft-social{
+    display: flex;
+    justify-content: center;
+    padding:1rem;
+}
+
+.ft-social-icon{
+    width: 2rem;
+    margin:.5rem;
+}
+
+.ft-legal{
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+@media screen and (min-width:768px){
+    .ft-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:0 2rem;
+    }
+    .ft-legal{
+        order:-1;
+        margin-top:2rem;
+    }
+}
