@@ -1,0 +1,11 @@
+// Crea un bucle con Sass para generar 10 clases, donde 
+// cada una aplicará un color en hexadecimal dentro de 
+// una misma escala. Por ejemplo: 
+// .color1 -> #000000, .color2 -> #100000, 
+// .color3 -> #200000, ..., .color10 -> #900000
+
+@for $i from 0 through 9 {
+    .color#{$i}{
+        color:##{$i}00000;
+    }
+}

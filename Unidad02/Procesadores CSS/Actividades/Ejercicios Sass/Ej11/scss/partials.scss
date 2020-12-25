@@ -1,0 +1,28 @@
+// Crea tres ficheros scss para importarlos en el archivo 
+// partials.scss: _reset.scss, _colores.scss, _general.scss.
+
+// El primero que sirva para reseteo de propiedades: margin 
+// y padding 0 aplicados a html y body.
+
+// En el segundo define dos colores para las variables 
+// bodycolor y footercolor.
+
+// En el tercero define las variables bodyfont y bodysize 
+// con los valores que quieras.
+
+// Puedes probar la hoja de estilo resultante en el archivo 
+// ejercicio5.html.
+    @use "otherScss/reset";
+    @import "otherScss/colores";
+    @import "otherScss/general";
+
+    body {
+        font-family: $bodyfont;
+        background-color: $bodycolor;
+        font-size: $bodysize;
+    }
+     
+    footer {
+        background-color: $footercolor;
+         clear: both;
+     }

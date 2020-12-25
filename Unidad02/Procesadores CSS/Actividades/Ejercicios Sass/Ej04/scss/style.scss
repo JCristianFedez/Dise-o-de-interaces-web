@@ -1,0 +1,14 @@
+ul {
+    color: red;
+    font-size: 1.5rem;
+
+    ul {
+        color: green;
+        font-size: 1rem;
+
+        ul {
+            color: blue;
+            font-size: 0.8rem;
+        }
+    }
+}

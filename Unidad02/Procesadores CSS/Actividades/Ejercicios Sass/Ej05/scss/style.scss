@@ -1,0 +1,29 @@
+body{
+    header{
+        background-color: yellow;
+        h1{
+            color:red;
+        }
+    }
+
+    footer{
+        background-color: lightblue;
+        h4{
+            color:green;
+
+            a{
+                color:darkorange;
+            }
+        }
+
+        div{
+            ul{
+                li{
+                    a{
+                        color:saddlebrown;
+                    }
+                }
+            }
+        }
+    }
+}

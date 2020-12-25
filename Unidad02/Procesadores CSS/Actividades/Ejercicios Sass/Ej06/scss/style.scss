@@ -1,0 +1,28 @@
+// Crea una clase contenedor, en el que se defina un 
+// ancho mediante una variable. Mediante la extensión 
+// de selectores de sass
+// (@extend), crea una clase contenedor_con_altura, 
+// que además de la anchura anterior, establezca una 
+// altura mediante otra variable
+$width_container:500px;
+$height_container:500px;
+
+%contenedor{
+    width:$width_container;
+    background-color: lightpink;
+}
+
+%contenedor_con_altura{
+    @extend %contenedor;
+    height: $height_container;
+    background-color: lightskyblue;
+}
+
+.contenedor{
+    @extend %contenedor;
+}
+
+.contenedor_con_altura{
+    @extend %contenedor_con_altura;
+}
+

@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../scss/otherscss/_reset.scss","../scss/partials.scss","../scss/otherscss/_general.scss","../scss/otherscss/_colores.scss"],"names":[],"mappings":"AAAA;EACI;EACA;;;ACgBA;EACI,aCnBE;EDoBF,kBEpBG;EFqBH,WCpBE;;;ADuBN;EACI,kBExBK;EFyBJ","file":"style.css"}

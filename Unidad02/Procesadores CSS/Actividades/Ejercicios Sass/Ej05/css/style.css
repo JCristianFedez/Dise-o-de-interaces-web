@@ -1,0 +1,20 @@
+body header {
+  background-color: yellow;
+}
+body header h1 {
+  color: red;
+}
+body footer {
+  background-color: lightblue;
+}
+body footer h4 {
+  color: green;
+}
+body footer h4 a {
+  color: darkorange;
+}
+body footer div ul li a {
+  color: saddlebrown;
+}
+
+/*# sourceMappingURL=style.css.map */

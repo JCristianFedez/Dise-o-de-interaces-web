@@ -1,0 +1,11 @@
+.contenedor, .contenedor_con_altura {
+  width: 500px;
+  background-color: lightpink;
+}
+
+.contenedor_con_altura {
+  height: 500px;
+  background-color: lightskyblue;
+}
+
+/*# sourceMappingURL=style.css.map */
