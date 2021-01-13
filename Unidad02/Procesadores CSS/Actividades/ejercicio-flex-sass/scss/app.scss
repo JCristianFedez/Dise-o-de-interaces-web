@@ -1,0 +1,53 @@
+/////////VARIABLES///////////
+@import "variables.scss";
+////////FIN-VARIABLES////////////
+
+body{
+    font-family: $main_font;
+}
+
+.contenedor {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.oculto {
+    display: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        padding: 1.4rem 0;
+    }
+}
+    .carrito-compras {
+        position: relative;
+
+        &:hover {
+            .contenido {
+                display: block;
+                position: absolute;
+                right: 0;
+                background-color: #f2f2f2;
+                padding: 1rem;
+
+                img {
+                    max-width: 150px;
+                }
+
+                .boton{
+                    background-color: $main_color;
+                    padding: .5rem 1rem;
+                    margin-top: 1rem;
+                    display: block;
+                    text-align: center;
+                    text-decoration: none;
+                    color: $blanco;
+                }
+            }
+        }
+    }

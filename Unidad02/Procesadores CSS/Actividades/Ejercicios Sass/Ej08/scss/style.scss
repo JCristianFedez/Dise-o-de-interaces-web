@@ -6,6 +6,6 @@
 
 @for $i from 0 through 9 {
     .color#{$i}{
-        color:##{$i}00000;
+        background-color:unquote($string: "#"+"#{$i}"+"00000");
     }
 }
