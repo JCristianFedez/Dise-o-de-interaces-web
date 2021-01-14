@@ -2,11 +2,18 @@
 $gris: #f2f2f2;
 $blanco: #fff;
 $negro: #000;
-$main_color:#33c3f0;
-$second_color:#741d51;
-$third_color:#e44e52;
+$principal:#33c3f0;
+$secundario:#741d51;
+$terciario:#e44e52;
 /////// END COLORS ////////
 
 /////// START FONTS ///////
-$main_font:"Raleway",sans-serif;
+$fuente_principal:"Raleway",sans-serif;
 /////// END FONTS /////////
+
+
+//START BREAKPOINTS SIZES//
+$telefono: 400px;
+$tablet: 768px;
+$desktop: 1024px;
+///END BREAKPOINTS SIZES///
