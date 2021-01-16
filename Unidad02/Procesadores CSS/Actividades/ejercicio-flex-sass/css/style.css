@@ -151,4 +151,78 @@ body {
   background-repeat: no-repeat;
 }
 
+.centrado {
+  text-align: center;
+}
+
+.cursos {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cursos .curso {
+  border: 1px solid #f2f2f2;
+  margin: 1rem;
+  flex: 1 1 calc((100% / 4) - 2rem);
+}
+.cursos .curso .imagen-curso {
+  min-width: 100%;
+  max-width: 100%;
+}
+.cursos .curso .info-curso {
+  margin: 1rem;
+}
+.cursos .curso .info-curso h4 {
+  font-size: 1.6rem;
+}
+.cursos .curso .info-curso p {
+  font-size: 1.3rem;
+}
+.cursos .curso .info-curso .precio {
+  display: flex;
+  justify-content: space-between;
+}
+.cursos .curso .info-curso .precio .regular {
+  color: red;
+  text-decoration: line-through;
+}
+.cursos .curso .info-curso .precio .oferta {
+  color: green;
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+.cursos .curso .info-curso .boton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #741d51;
+  height: 3rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.footer {
+  border-top: 1px solid #f2f2f2;
+}
+.footer .contenedor-footer {
+  display: flex;
+  margin: 1rem 0;
+  justify-content: flex-start;
+}
+.footer .contenedor-footer .menu {
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+  flex-basis: calc(100% /2);
+}
+@media screen and (min-width: 1024px) {
+  .footer .contenedor-footer .menu {
+    flex-basis: calc(100% /4);
+  }
+}
+.footer .contenedor-footer .menu a {
+  text-decoration: none;
+  color: #33c3f0;
+}
+
 /*# sourceMappingURL=style.css.map */
