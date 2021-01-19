@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3,1fr);
+
+    grid-template-areas: 
+        "head head head head head"
+        "menu . main main main"
+        "menu pie pie pie pie"
+    ;
+
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border: 10px solid black;
+}
+
+.elemento {
+    color: white;
+    text-align: center;
+}
+
+.elemento-1 {
+    background-color: red;
+    grid-area: head;
+}
+
+.elemento-2 {
+    background-color: darkgoldenrod;
+    grid-area: menu;
+}  
+
+.elemento-3 {
+    background-color: orange;
+    grid-area: main;
+}
+
+.elemento-4 {
+    background-color: lightgreen;
+    grid-area: pie;
+}
