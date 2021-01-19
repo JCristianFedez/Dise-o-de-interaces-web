@@ -181,7 +181,15 @@ body {
     .curso {
         border: 1px solid $gris;
         margin: 1rem;
-        flex: 1 1 calc((100% / 4) - 2rem);
+        flex: 0 1 calc(50% - 2rem);
+
+        @include tablet(){
+            flex: 0 1 calc(33% - 2rem);
+        }
+
+        @include desktop(){
+            flex: 0 1 calc(25% - 2rem)
+        }
 
         .imagen-curso {
             min-width: 100%;
@@ -220,6 +228,7 @@ body {
                 justify-content: center;
                 align-items: center;
 
+                text-align: center;
                 background-color: $secundario;
                 height: 3rem;
                 color: $blanco;
@@ -242,6 +251,7 @@ body {
             flex-direction: column;
             line-height: 2rem;
             flex-basis: calc(100% /2);
+            
             @include desktop {
                 flex-basis: calc(100% /4);
             }

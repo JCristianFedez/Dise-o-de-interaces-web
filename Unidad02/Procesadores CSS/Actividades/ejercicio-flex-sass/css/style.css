@@ -162,7 +162,17 @@ body {
 .cursos .curso {
   border: 1px solid #f2f2f2;
   margin: 1rem;
-  flex: 1 1 calc((100% / 4) - 2rem);
+  flex: 0 1 calc(50% - 2rem);
+}
+@media screen and (min-width: 768px) {
+  .cursos .curso {
+    flex: 0 1 calc(33% - 2rem);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .cursos .curso {
+    flex: 0 1 calc(25% - 2rem);
+  }
 }
 .cursos .curso .imagen-curso {
   min-width: 100%;
@@ -194,6 +204,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   background-color: #741d51;
   height: 3rem;
   color: #fff;
