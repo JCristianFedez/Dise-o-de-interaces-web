@@ -1,4 +1,7 @@
+@import "variables.scss";
+@import 'mixins';
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
 *,*::after,*::before{
     margin: 0px;
     padding: 0px;
@@ -18,7 +21,7 @@ html{
     grid-auto-flow: row;
     margin: 1rem auto;
     width: 90vw;
-
+    
     p,h1,h4,img{
         margin:0px;
     }
