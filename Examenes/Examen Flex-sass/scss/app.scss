@@ -1,0 +1,259 @@
+@import "variables.scss";
+@import 'mixins.scss';
+@import "fonts.scss";
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $grid_fondo;
+    overflow-x: hidden;
+
+}
+
+header {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../img/hero.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+
+    nav {
+        width: 100%;
+        height: 220px;
+        background-image: $gradiente-menu;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 1rem;
+
+        @include tablet {
+            flex-direction: row;
+            justify-content: space-evenly;
+            height: 5rem;
+        }
+
+        img {
+            width: 40%;
+            margin-bottom: .5rem;
+
+            @include tablet {
+                width: 150px;
+            }
+        }
+
+        .enlaces {
+            display: flex;
+            flex-direction: column;
+
+            @include tablet {
+                width: 40%;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                height: 5rem;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                line-height: 1.5rem;
+                text-align: center;
+            }
+        }
+
+    }
+
+    .portada {
+        color: $texto-bienvenida;
+        padding: 1rem;
+        font-size: 1.4rem;
+        
+        @include telefono {
+            margin-left: 5rem;
+        }
+
+        @include tablet {
+            position: relative;
+            width: 30%;
+            margin-left: 10%;
+        }
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 100%;
+
+    h2 {
+        margin-top: 2rem;
+    }
+
+    .blog-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include telefono {
+            flex-flow: row wrap;
+        }
+
+        @include tablet {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .blog-item {
+            height: 30%;
+            background-color: white;
+            margin-top: 1rem;
+
+            @include telefono {
+                flex: 0 1 calc((100% / 2) - 1rem);
+            }
+
+            @include tablet {
+                flex: 0 1 calc((100% / 3) - 1rem);
+            }
+
+            img {
+                max-width: 100%;
+            }
+
+            .blog-item-text {
+                text-align: center;
+                height: 200px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+
+                .destacado {
+                    color: $texto-publicaciones;
+                }
+
+                a {
+                    background-color: $botones;
+                    padding: 1rem 2rem;
+                    border-radius: 1rem;
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+
+
+        }
+    }
+
+
+    .enlaces-interesantes {
+        margin-top: 1rem;
+        width: 100%;
+        display: flex;
+        flex-flow: row wrap;
+
+        @include tablet {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 1rem;
+        }
+
+        .enlace-item {
+            flex: 1 0 50%;
+            height: 10rem;
+            color: white;
+            text-decoration: none;
+
+            @include tablet {
+                flex: 1 1 25%;
+            }
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            i {
+                font-size: 3rem;
+            }
+        }
+
+        $colors-en-in:($rutas, $mecanica, $bicicletas, $consejos-trucos);
+
+        @for $i from 1 through length($colors-en-in) {
+            a:nth-child(#{length($colors-en-in)}n+#{$i}) {
+                background: nth($colors-en-in, $i);
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: 1rem;
+    background-color: $footer;
+    color: white;
+
+    .footer-info {
+        margin: 1rem;
+
+        @include tablet {
+            width: 80%;
+            margin: 0 auto;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            display: flex;
+        }
+
+        h3 {
+            padding: 1rem 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .ultimas-entradas {
+            ul {
+                margin-left: 2rem;
+
+                li {
+                    list-style: square;
+                }
+            }
+        }
+
+        .footer-item {
+            .redes-sociales {
+                font-size: 2rem;
+                text-align: center;
+            }
+
+            @include tablet {
+                flex: 0 1 calc(100% / 3);
+            }
+        }
+    }
+
+    .copyright {
+        padding: 2rem;
+        text-align: center;
+        width: 100%;
+        background-color: $footer-copyright;
+    }
+}

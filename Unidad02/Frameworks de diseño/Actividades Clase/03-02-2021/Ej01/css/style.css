@@ -1,0 +1,14 @@
+.container{
+    background-color: chartreuse;
+    height: 600px;
+}
+
+.red{
+    background-color: red;
+    height: 100px;
+}
+
+.blue{
+    background-color: blue;
+    height: 100px;
+}

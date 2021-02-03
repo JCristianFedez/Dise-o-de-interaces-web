@@ -1,0 +1,262 @@
+@font-face {
+  font-family: "NotoSans";
+  src: url("../fonts/NotoSansTC-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "NotoSerif";
+  src: url("../fonts/NotoSerif-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+h1, h2 {
+  font-family: "NotoSerif";
+}
+
+h3, h4, p, a {
+  font-family: "NotoSans";
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2f2f2;
+  overflow-x: hidden;
+}
+
+header {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../img/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+header nav {
+  width: 100%;
+  height: 220px;
+  background-image: linear-gradient(#360033, #0b8793);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1rem;
+}
+@media screen and (min-width: 768px) {
+  header nav {
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 5rem;
+  }
+}
+header nav img {
+  width: 40%;
+  margin-bottom: 0.5rem;
+}
+@media screen and (min-width: 768px) {
+  header nav img {
+    width: 150px;
+  }
+}
+header nav .enlaces {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  header nav .enlaces {
+    width: 40%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 5rem;
+  }
+}
+header nav .enlaces a {
+  text-decoration: none;
+  color: white;
+  line-height: 1.5rem;
+  text-align: center;
+}
+header .portada {
+  color: #f0eaea;
+  padding: 1rem;
+  font-size: 1.4rem;
+}
+@media screen and (min-width: 480px) {
+  header .portada {
+    margin-left: 5rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  header .portada {
+    position: relative;
+    width: 30%;
+    margin-left: 10%;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+}
+main h2 {
+  margin-top: 2rem;
+}
+main .blog-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (min-width: 480px) {
+  main .blog-container {
+    flex-flow: row wrap;
+  }
+}
+@media screen and (min-width: 768px) {
+  main .blog-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+main .blog-container .blog-item {
+  height: 30%;
+  background-color: white;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 480px) {
+  main .blog-container .blog-item {
+    flex: 0 1 calc((100% / 2) - 1rem);
+  }
+}
+@media screen and (min-width: 768px) {
+  main .blog-container .blog-item {
+    flex: 0 1 calc((100% / 3) - 1rem);
+  }
+}
+main .blog-container .blog-item img {
+  max-width: 100%;
+}
+main .blog-container .blog-item .blog-item-text {
+  text-align: center;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+main .blog-container .blog-item .blog-item-text .destacado {
+  color: #db008d;
+}
+main .blog-container .blog-item .blog-item-text a {
+  background-color: #0b8793;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  color: white;
+  text-decoration: none;
+}
+main .enlaces-interesantes {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+@media screen and (min-width: 768px) {
+  main .enlaces-interesantes {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+}
+main .enlaces-interesantes .enlace-item {
+  flex: 1 0 50%;
+  height: 10rem;
+  color: white;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  main .enlaces-interesantes .enlace-item {
+    flex: 1 1 25%;
+  }
+}
+main .enlaces-interesantes .enlace-item i {
+  font-size: 3rem;
+}
+main .enlaces-interesantes a:nth-child(4n+1) {
+  background: #263156;
+}
+main .enlaces-interesantes a:nth-child(4n+2) {
+  background: #008fd1;
+}
+main .enlaces-interesantes a:nth-child(4n+3) {
+  background: #b97777;
+}
+main .enlaces-interesantes a:nth-child(4n+4) {
+  background: #1f4866;
+}
+
+footer {
+  margin-top: 1rem;
+  background-color: #0b8793;
+  color: white;
+}
+footer .footer-info {
+  margin: 1rem;
+}
+@media screen and (min-width: 768px) {
+  footer .footer-info {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+  }
+}
+footer .footer-info h3 {
+  padding: 1rem 0;
+}
+footer .footer-info a {
+  text-decoration: none;
+  color: white;
+}
+footer .footer-info .ultimas-entradas ul {
+  margin-left: 2rem;
+}
+footer .footer-info .ultimas-entradas ul li {
+  list-style: square;
+}
+footer .footer-info .footer-item .redes-sociales {
+  font-size: 2rem;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  footer .footer-info .footer-item {
+    flex: 0 1 calc(100% / 3);
+  }
+}
+footer .copyright {
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  background-color: #31113f;
+}
+
+/*# sourceMappingURL=style.css.map */

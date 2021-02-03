@@ -1,0 +1,23 @@
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+	grid-template-columns: 100vw;
+}
+
+header{
+    padding: 1rem 0;
+    background-color: #479690;
+    color: #085852;
+    text-align: center;
+}
+
+main{
+//Dentro del main iria el contenido de la pagina web
+}
+footer{
+    background-color: #085852;
+    color: #77BBB6;
+    padding: 1rem 0;
+    text-align: center;
+}
