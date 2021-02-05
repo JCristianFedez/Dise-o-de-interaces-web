@@ -22,26 +22,29 @@
         </div>
 
         <!-- Menu -->
-        <div class="row bg-primary">
-            <nav class="navbar navbar-expand-lg navbar-light bg-primary">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="#">Features</a>
-                        <a class="nav-item nav-link" href="#">Pricing</a>
-                        <a class="nav-item nav-link disabled" href="#">Disabled</a>
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="#">Features</a>
+                            <a class="nav-item nav-link" href="#">Pricing</a>
+                            <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                        </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
         </div>
 
         <!-- Multimedia -->
-        <div class="row my-2">
+        <div class="row my-3">
             <!-- Video -->
             <div class="col-6 embed-responsive embed-responsive-4by3">
                 <iframe height="100%" width="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY"
@@ -82,7 +85,7 @@
 
         <h1 class="display-1 bg-primary text-white text-center">Anuncios</h1>
         <!-- Anuncios -->
-        <div class="row justify-content-center">
+        <div class="row justify-content-center my-3">
             <div class="col-11">
                 <div class="row text-center justify-content-center">
                     <div class="col-md-3 col-sm-4">
@@ -121,44 +124,49 @@
 
         <h1 class="display-1 bg-primary text-white text-center">CONTACTO</h1>
         <!-- Formulario -->
-        <div class="row">
+        <div class="row my-3 justify-content-center">
             <div class="col-md-3 col-sm-6">
-                <form action="#" method="post">
-                    <p>Nombre y Apellidos:</p>
-                    <input type="text" name="" id="">
-                    <br>
-                    <p>Email:</p>
-                    <input type="text" name="" id="">
-                    <br>
-                    <p>Consulta:</p>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <br>
-                    <input type="submit" value="Enviar">
+                <form action="#" class="">
+                    <div class="col-12 mb-2">
+                        <label for="nombre-apellido" class="form-label">Nombre y Apellidos</label>
+                        <input type="text" class="form-control" id="nombre-apellido">
+                    </div>
+                    <div class="col-12 mb-2">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    </div>
+                    <div class="col-12 mb-2">
+                        <label for="consulta" class="form-label">Consulta</label>
+                        <textarea class="form-control" id="consulta" rows="3"></textarea>
+                    </div>
+                    <div class="col-12 d-flex justify-content-end">
+                        <button type="submit" class="btn btn-dark" >Enviar</button>
+                    </div>
                 </form>
             </div>
             <div class="col-md-3 col-sm-6">
-                <a href="#">Contacta con nosotros</a>
+                <a href="#" class="btn btn-dark btn-lg">Contacta con nosotros</a>
                 <p>Estaremos encantados de resolverte cualquier duda que tengas</p>
             </div>
         </div>
 
         <footer>
             <!-- Pie 1 -->
-            <div class="row">
+            <div class="row justify-content-center text-center">
                 <div class="col-6">
                     <p>Copyrigh 2020</p>
                 </div>
             </div>
 
             <!-- Pie 2 -->
-            <div class="row">
+            <div class="row justify-content-center text-center">
                 <div class="col-md-1 col-sm-2">
-                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-twitter img-fluid"></i>
                 </div>
-                <div class="col-md-1 col-sm-2">
+                <div class="col-md-1 col-sm-2 img-fluid">
                     <i class="fab fa-facebook"></i>
                 </div>
-                <div class="col-md-1 col-sm-2">
+                <div class="col-md-1 col-sm-2 img-fluid">
                     <i class="fab fa-youtube"></i>
                 </div>
             </div>
