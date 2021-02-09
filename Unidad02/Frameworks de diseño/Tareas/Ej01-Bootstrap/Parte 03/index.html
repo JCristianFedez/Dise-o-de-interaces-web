@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href='css/bootstrap.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bootstrp</title>
+</head>
+
+<body>
+    <!-- Cabezera -->
+    <header>
+        <div class="container-fluid header bg-primary d-flex justify-content-center">
+            <div class="row h-100">
+                <div class="col h-100">
+                    <img src="images/LOGO_RG_256.png" alt="" class="img-fluid h-100">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenedor del cuerpo -->
+    <main>
+        <div class="container mt-5 border border-secondary rounded p-4">
+            <form action="">
+                <!-- Nombre alumno -->
+                <div class="mb-3">
+                    <label for="nombreAlumno" class="form-label">Nombre del Alumno: </label>
+                    <input type="text" class="form-control" id="nombreAlumno" required>
+                </div>
+
+                <!-- Curso y fecha -->
+                <div class="row mb-3">
+                    <div class="col">
+                        <div class="">
+                            <label for="cursoYGrupo" class="form-label">Curso y Grupo: </label>
+                            <input type="text" class="form-control" id="cursoYGrupo" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="">
+                            <label for="fechaHora" class="form-label">Fecha y hora: </label>
+                            <input type="datetime-local" class="form-control" id="fechaHora" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profesor y asignatura -->
+                <div class="row mb-3">
+                    <div class="col">
+                        <div class="">
+                            <label for="profesor" class="form-label">Profesor: </label>
+                            <input type="text" class="form-control" id="profesor" required>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="">
+                            <label for="asignatura" class="form-label">Asignatura: </label>
+                            <input type="text" class="form-control" id="asignatura" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conducta -->
+                <div class="row mb-3">
+                    <div class="col">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Conducta" id="conducta"
+                                style="height: 200px"></textarea>
+                            <label for="conducta">Conducta del alumno</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Expulsado  -->
+                <div class="row mb-3 ">
+                    <div class="col d-flex justify-content-center">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="expulsadoClase">
+                            <label class="form-check-label" for="expulsadoClase">Expulsado de clase</label>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="expulsadoCentro">
+                            <label class="form-check-label" for="expulsadoCentro">Expulsado del centro</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dias expulsado -->
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="diasExpulsado" class="form-label">Dias expulsado</label>
+                        <input type="range" class="form-range" min="0" max="15" step="1" id="diasExpulsado">
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+    </main>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+
+</html>
