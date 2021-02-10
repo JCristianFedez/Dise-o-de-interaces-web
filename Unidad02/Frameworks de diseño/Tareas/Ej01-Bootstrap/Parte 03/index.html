@@ -1,3 +1,4 @@
+<!-- TODO: Añadir Un popover, algunos tooltips -->
 <!doctype html>
 <html lang='en'>
 
@@ -5,7 +6,6 @@
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href='css/bootstrap.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="css/style.css">
     <title>Bootstrp</title>
 </head>
 
@@ -121,14 +121,34 @@
                     <div class="col-sm-6 mb-3 d-flex justify-content-center">
                         <button class="btn btn-success btn-lg" type="submit">Guardar</button>
                     </div>
+
                     <div class="col-sm-6 mb-3 d-flex justify-content-center">
-                        <button class="btn btn-danger btn-lg" type="reset">Eliminar</button>
+                        <button class="btn btn-danger btn-lg" type="reset" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Eliminar</button>
                     </div>
                 </div>
-
             </form>
         </div>
     </main>
+
+    <!-- Modal -->
+    <div class="modal modal-ejemplo" tabindex="-1" id="exampleModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Aqui titulo del modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Parte borrado.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/bootstrap.min.js"></script>
     <script>
