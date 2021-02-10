@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href='css/bootstrap.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bootstrp</title>
+</head>
+
+<body>
+    <!-- Cabezera -->
+    <header>
+        <div class="container-fluid header bg-primary d-flex justify-content-center">
+            <div class="row h-100">
+                <div class="col h-100">
+                    <img src="images/LOGO_RG_256.png" alt="" class="img-fluid h-100">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contenedor del cuerpo -->
+    <main>
+        <div class="container my-5 border border-secondary rounded p-4">
+            <form action="" class="needs-validation" novalidate>
+                <!-- Nombre alumno -->
+                <div class="mb-3">
+                    <label for="nombreAlumno" class="form-label">Nombre del Alumno: </label>
+                    <input type="text" class="form-control" id="nombreAlumno" required>
+                    <div class="invalid-feedback">
+                        Porfavor introduce nombre del alumno.
+                    </div>
+                </div>
+
+                <!-- Curso y fecha -->
+                <div class="row">
+                    <div class="col-sm-6 mb-3">
+                        <div class="">
+                            <label for="cursoYGrupo" class="form-label">Curso y Grupo: </label>
+                            <input type="text" class="form-control" id="cursoYGrupo" required>
+                            <div class="invalid-feedback">
+                                Porfavor introduce curso y grupo.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mb-3">
+                        <div class="">
+                            <label for="fechaHora" class="form-label">Fecha y hora: </label>
+                            <input type="datetime-local" class="form-control" id="fechaHora" required>
+                            <div class="invalid-feedback">
+                                Porfavor introduce fecha y hora.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Profesor y asignatura -->
+                <div class="row ">
+                    <div class="col-sm-6 mb-3">
+                        <div class="">
+                            <label for="profesor" class="form-label">Profesor: </label>
+                            <input type="text" class="form-control" id="profesor" required>
+                            <div class="invalid-feedback">
+                                Porfavor introduce nombre del profesor.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 mb-3">
+                        <div class="">
+                            <label for="asignatura" class="form-label">Asignatura: </label>
+                            <input type="text" class="form-control" id="asignatura" required>
+                            <div class="invalid-feedback">
+                                Porfavor introduce nombre de la asignatura.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conducta -->
+                <div class="row mb-3">
+                    <div class="col">
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Conducta" id="conducta"
+                                style="height: 200px"></textarea>
+                            <label for="conducta">Conducta del alumno</label>
+                            <div class="invalid-feedback">
+                                Porfavor introduzca una descripciond de la conducta.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tipo de expulsaion  -->
+                <div class="row mb-3 ">
+                    <div class="col d-flex justify-content-center">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="expulsadoClase">
+                            <label class="form-check-label" for="expulsadoClase">Expulsado de clase</label>
+                        </div>
+                    </div>
+                    <div class="col d-flex justify-content-center">
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="expulsadoCentro">
+                            <label class="form-check-label" for="expulsadoCentro">Expulsado del centro</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dias expulsado -->
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="diasExpulsado" class="form-label">Dias expulsado</label>
+                        <input type="range" class="form-range" min="0" max="15" step="1" id="diasExpulsado">
+                    </div>
+                </div>
+
+                <!-- Enviar o vaciar -->
+                <div class="row">
+                    <div class="col-sm-6 mb-3 d-flex justify-content-center">
+                        <button class="btn btn-success btn-lg" type="submit">Guardar</button>
+                    </div>
+                    <div class="col-sm-6 mb-3 d-flex justify-content-center">
+                        <button class="btn btn-danger btn-lg" type="reset">Eliminar</button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </main>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+
+            // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+</body>
+
+</html>
