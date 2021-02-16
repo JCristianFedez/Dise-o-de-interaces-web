@@ -1,0 +1,252 @@
+@font-face {
+  font-family: "Staatliches";
+  src: url("../fonts/Staatliches-Regular.ttf");
+}
+@font-face {
+  font-family: "Noto Sans TC";
+  src: url("../fonts/NotoSansTC-Regular.otf");
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.full-container {
+  background-color: #009EFF;
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: auto;
+}
+
+header {
+  font-family: Staatliches;
+}
+header .logo {
+  padding: 1rem;
+  text-align: center;
+}
+header .logo img {
+  height: 100%;
+}
+header nav {
+  background-color: #642B73;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+header nav a {
+  font-family: Staatliches;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  transition: transform color;
+  transition-duration: 500ms;
+}
+header nav a:hover {
+  transform: scale(1.2);
+  color: #FFCE00;
+  opacity: 70%;
+}
+header nav .activo {
+  color: #FFCE00;
+}
+header nav .no-activo {
+  color: #FFFFFF;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 1rem;
+  text-align: center;
+  grid-auto-flow: dense;
+  font-family: Staatliches;
+  margin: 2rem 0;
+}
+@media screen and (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 80vw;
+    margin: 2rem auto;
+  }
+}
+.gallery .subtitle {
+  grid-column: 1/-1;
+  grid-row: 1/2;
+}
+.gallery .big-img-gallery {
+  grid-column: 1/3;
+  height: 100%;
+}
+@media screen and (min-width: 768px) {
+  .gallery .right {
+    grid-column: 2/4;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .nosotros-content {
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+}
+.nosotros-content .n-col {
+  display: grid;
+  color: white;
+  grid-template-columns: repeat(1fr);
+  gap: 1rem;
+  align-items: center;
+  grid-auto-flow: dense;
+  font-family: "Noto Sans TC";
+  margin: 2rem 0;
+}
+@media screen and (min-width: 768px) {
+  .nosotros-content .n-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.nosotros-content .n-col .nosotros-imagen {
+  order: -1;
+}
+@media screen and (min-width: 768px) {
+  .nosotros-content .n-col .nosotros-imagen {
+    order: 0;
+  }
+}
+.nosotros-content .porque-nosotros {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 2rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+@media screen and (min-width: 768px) {
+  .nosotros-content .porque-nosotros {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.nosotros-content .porque-nosotros .modulo-figure {
+  color: #FFFFFF;
+}
+.nosotros-content .porque-nosotros .modulo-figure i {
+  font-size: 10rem;
+}
+.nosotros-content .porque-nosotros .modulo-figure .f-title {
+  color: #FFCE00;
+  font-family: Staatliches;
+  margin: 1rem;
+}
+
+.producto-content {
+  margin-bottom: 1rem;
+}
+.producto-content .prod-info {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 0;
+  font-family: "Noto Sans TC";
+  color: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  .producto-content .prod-info {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+}
+.producto-content .prod-info .formulario {
+  margin: 2rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 1rem;
+}
+.producto-content .prod-info .formulario .talla,
+.producto-content .prod-info .formulario .cantidad {
+  border: 0.5rem solid #642B73;
+  background-color: inherit;
+  color: #FFFFFF;
+  padding: 0.5rem;
+}
+.producto-content .prod-info .formulario .talla > option {
+  color: black;
+}
+.producto-content .prod-info .formulario .cantidad::placeholder {
+  color: #FFFFFF;
+}
+.producto-content .prod-info .formulario .agregar-carrito {
+  background-color: #FFCE00;
+  border: none;
+  display: block;
+  padding: 1rem;
+  width: 100%;
+  font-family: Staatliches;
+  grid-column: 1/-1;
+  transition: transform color;
+  transition-duration: 500ms;
+  cursor: pointer;
+}
+.producto-content .prod-info .formulario .agregar-carrito:hover {
+  transform: scaleY(1.05);
+  color: #FFFFFF;
+}
+.producto-content .prod-info .formulario .agregar-carrito:active {
+  transform: translateY(1px);
+}
+
+footer {
+  font-family: Staatliches;
+  background-color: #642B73;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  color: #FFFFFF;
+  font-size: 1.4rem;
+}
+
+.card {
+  background-color: #642B73;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+.card img {
+  margin-bottom: 1.5rem;
+}
+.card .shirt-name {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.card .shirt-price {
+  color: #FFCE00;
+  font-size: 1.4rem;
+}
+
+.img-responsive {
+  width: 100%;
+}
+
+.subtitle {
+  text-align: center;
+  color: #FFCE00;
+  font-family: Staatliches;
+  margin: 2rem 0;
+}
+
+/*# sourceMappingURL=style.css.map */

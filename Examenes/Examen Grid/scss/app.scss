@@ -1,0 +1,307 @@
+@import "variables.scss";
+@import 'mixins.scss';
+@import "fonts.scss";
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+// Contenedor de toda la pagina
+.full-container {
+    background-color: $azul;
+
+    //Footer siempre arriba y footer seimpre abajo aunque ho haya suficiente contenido
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto;
+}
+
+// Cabezera
+header {
+    font-family: Staatliches;
+
+    // Contenedor del logo
+    .logo {
+        padding: 1rem;
+        text-align: center;
+
+        img {
+            height: 100%;
+            
+        }
+    }
+
+    // Contenedor de la barra de navegacion
+    nav {
+        background-color: $morado;
+        height: 5rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem 0;
+
+        a {
+            font-family: Staatliches;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.5rem;
+            transition: transform color;
+            transition-duration: 500ms;
+        }
+
+        a:hover {
+            transform: scale(1.2);
+            color: $amarillo;
+            opacity: 70%;
+        }
+
+        // Definen en que pagina esta
+        .activo {
+            color: $amarillo;
+        }
+
+        .no-activo {
+            color: $blanco;
+        }
+    }
+}
+
+// Contenedor de la galeria de imagenes de la pagina tienda.html
+.gallery {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 1rem;
+    text-align: center;
+    grid-auto-flow: dense;
+    font-family: Staatliches;
+    margin: 2rem 0;
+
+    @include tablet {
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 80vw;
+        margin: 2rem auto;
+
+    }
+
+    .subtitle {
+
+        grid-column: 1 / -1;
+        grid-row: 1 / 2;
+    }
+
+    // Imagenes que ocupan varias columnas
+    .big-img-gallery {
+        grid-column: 1 / 3;
+        height: 100%;
+    }
+
+    @include tablet {
+        .right {
+            grid-column: 2 / 4;
+        }
+    }
+}
+
+// Contenedor de la pagina nosotros
+.nosotros-content {
+
+    @include tablet {
+        max-width: 80vw;
+        margin: 0 auto;
+    }
+
+    // contenedor del parrafo y la imagen
+    .n-col {
+        display: grid;
+        color: white;
+        grid-template-columns: repeat(1fr);
+        gap: 1rem;
+        align-items: center;
+        grid-auto-flow: dense;
+        font-family: 'Noto Sans TC';
+        margin: 2rem 0;
+
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .nosotros-imagen {
+            order: -1;
+
+            @include tablet {
+                order: 0;
+            }
+        }
+    }
+
+    // contenedor de el porque comprar en nosotros
+    .porque-nosotros {
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 2rem;
+        text-align: center;
+        margin: 2rem 0;
+
+        @include tablet {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        // Contenedor de los 4 figure
+        .modulo-figure {
+            color: $blanco;
+
+            i {
+                font-size: 10rem;
+            }
+
+            .f-title {
+                color: $amarillo;
+                font-family: Staatliches;
+                margin: 1rem;
+            }
+        }
+    }
+}
+
+
+// Contenedor de la pagina producto
+.producto-content {
+
+    margin-bottom: 1rem;
+
+
+    // Contenedor de la imagen del producto, el texto y el formulario
+    .prod-info {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        align-items: center;
+        gap: 1rem;
+        margin: 2rem 0;
+        font-family: 'Noto Sans TC';
+
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+            max-width: 80vw;
+            margin: 0 auto;
+        }
+
+        color: $blanco;
+
+        // Formulario con el select, input[number] y el submit
+        .formulario {
+            margin: 2rem 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            gap: 1rem;
+
+            // Talla=Select Cantidad=Input Number
+            .talla,
+            .cantidad {
+                border: .5rem solid $morado;
+                background-color: inherit;
+                color: $blanco;
+                padding: .5rem;
+            }
+
+            .talla>option {
+                color: black;
+            }
+
+            .cantidad::placeholder {
+                color: $blanco;
+            }
+
+            // Boton Submit
+            .agregar-carrito {
+                background-color: $amarillo;
+                border: none;
+                display: block;
+                padding: 1rem;
+                width: 100%;
+                font-family: Staatliches;
+                grid-column: 1 / -1;
+
+                transition: transform color;
+                transition-duration: 500ms;
+                cursor: pointer;
+            }
+
+            .agregar-carrito:hover {
+                transform: scaleY(1.05);
+                color: $blanco;
+            }
+
+            .agregar-carrito:active {
+                transform: translateY(1px);
+            }
+        }
+    }
+}
+
+footer {
+    font-family: Staatliches;
+    background-color: $morado;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+
+    color: $blanco;
+    font-size: 1.4rem;
+}
+
+// Tarjeta usada en la tienda.html
+.card {
+    background-color: $morado;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1rem;
+
+    img {
+        margin-bottom: 1.5rem;
+    }
+
+    // Figcaption con el nombre de la camiseta
+    .shirt-name {
+        color: white;
+        font-size: 2rem;
+        margin-bottom: .5rem;
+    }
+
+    // figcaption con el precio
+    .shirt-price {
+        color: $amarillo;
+        font-size: 1.4rem;
+    }
+}
+
+// Hacer imagenes responsive
+.img-responsive {
+    width: 100%;
+}
+
+// Subtitulo usado en varias paginas, tambien
+// es modificado donde hace falta
+.subtitle {
+    text-align: center;
+    color: $amarillo;
+    font-family: Staatliches;
+    margin: 2rem 0;
+}
