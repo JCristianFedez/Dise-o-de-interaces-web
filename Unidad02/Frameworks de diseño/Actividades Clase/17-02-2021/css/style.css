@@ -1,0 +1,19 @@
+:root{
+    --primero: #8bc34a;
+    --segundo: #03a9f4;
+    --tercero: #ab47bc;
+    --cuarto: #ffb300;
+    --gris: #ecf0f5;
+    --azul: #25476a;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100vh;
+    background-image: url("../images/library.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
