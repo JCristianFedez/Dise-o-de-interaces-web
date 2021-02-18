@@ -58,64 +58,26 @@
     <!-- Contendor del contenido -->
     <div class="me-5 container mt-3">
 
-        <!-- Boton -->
+        <!-- Formulario -->
         <div class="row justify-content-center mb-3">
-            <div class="col-md-8 text-center">
-                <h1>Administracion de clientes</h1>
-                <a class="btn btn-success text-center pt-3 px-5">
-                    <i class="fas fa-plus fs-1"></i>
-                    <p>Nuevo</p>
-                </a>
-            </div>
-        </div>
-
-        <!-- Tabla -->
-        <div class="row justify-content-center">
-            <div class="col-md-8 table-responsive">
-                <h2 class="text-center">Lista de Clientes</h2>
-                <table class="table table-striped table-hover">
-                    <thead class="table-dark">
-                        <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Apellido</th>
-                            <th scope="col" class="text-center">Acciones</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Urizar</td>
-                            <td>Azpitarte</td>
-                            <td class="d-flex justify-content-evenly">
-                                <a href="#" class="btn btn-danger flex-grow-1 mx-1">Borrar</a>
-                                <a href="#" class="btn btn-success flex-grow-1 mx-1">Editar</a>
-                                <a href="#" class="btn btn-info flex-grow-1 mx-1">Ver</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Undiano</td>
-                            <td>Mallenco</td>
-                            <td class="d-flex justify-content-evenly">
-                                <a href="#" class="btn btn-danger flex-grow-1 mx-1">Borrar</a>
-                                <a href="#" class="btn btn-success flex-grow-1 mx-1">Editar</a>
-                                <a href="#" class="btn btn-info flex-grow-1 mx-1">Ver</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Japon</td>
-                            <td>Sevilla</td>
-                            <td class="d-flex justify-content-evenly">
-                                <a href="#" class="btn btn-danger flex-grow-1 mx-1">Borrar</a>
-                                <a href="#" class="btn btn-success flex-grow-1 mx-1">Editar</a>
-                                <a href="#" class="btn btn-info flex-grow-1 mx-1">Ver</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p  class="text-muted">Listado actualizado...</p>
+            <div class="col-md-8">
+                <h1 class="text-center">Nuevo Cliente</h1>
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre1" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre1" placeholder="Nombre">
+                      </div>
+                    <div class="mb-3">
+                        <label for="apellidos1" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="apellidos1" placeholder="Apellidos">
+                      </div>
+                    <div class="mb-3">
+                        <label for="email1" class="form-label">Correo Electronico</label>
+                        <input type="email" class="form-control" id="email1" aria-describedby="emailHelp" placeholder="Correo electronico">
+                        <div id="emailHelp" class="form-text">No se permiten emails temporales.</div>
+                      </div>
+                    <button type="submit" class="btn btn-primary">Agragar</button>
+                  </form>
             </div>
         </div>
     </div>

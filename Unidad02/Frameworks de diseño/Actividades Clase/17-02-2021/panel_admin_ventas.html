@@ -8,7 +8,9 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css' rel='stylesheet'
         integrity='sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl' crossorigin='anonymous'>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+
+        <link rel="stylesheet" href="css/style.css">
     <title>Panel Admin</title>
 </head>
 
@@ -58,71 +60,22 @@
     <!-- Contendor del contenido -->
     <div class="me-5 container mt-3">
 
-        <!-- Boton -->
+        <!-- Grafico -->
         <div class="row justify-content-center mb-3">
-            <div class="col-md-8 text-center">
-                <h1>Administracion de clientes</h1>
-                <a class="btn btn-success text-center pt-3 px-5">
-                    <i class="fas fa-plus fs-1"></i>
-                    <p>Nuevo</p>
-                </a>
-            </div>
-        </div>
-
-        <!-- Tabla -->
-        <div class="row justify-content-center">
-            <div class="col-md-8 table-responsive">
-                <h2 class="text-center">Lista de Clientes</h2>
-                <table class="table table-striped table-hover">
-                    <thead class="table-dark">
-                        <tr>
-                            <th scope="col">ID</th>
-                            <th scope="col">Nombre</th>
-                            <th scope="col">Apellido</th>
-                            <th scope="col" class="text-center">Acciones</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Urizar</td>
-                            <td>Azpitarte</td>
-                            <td class="d-flex justify-content-evenly">
-                                <a href="#" class="btn btn-danger flex-grow-1 mx-1">Borrar</a>
-                                <a href="#" class="btn btn-success flex-grow-1 mx-1">Editar</a>
-                                <a href="#" class="btn btn-info flex-grow-1 mx-1">Ver</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Undiano</td>
-                            <td>Mallenco</td>
-                            <td class="d-flex justify-content-evenly">
-                                <a href="#" class="btn btn-danger flex-grow-1 mx-1">Borrar</a>
-                                <a href="#" class="btn btn-success flex-grow-1 mx-1">Editar</a>
-                                <a href="#" class="btn btn-info flex-grow-1 mx-1">Ver</a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">3</th>
-                            <td>Japon</td>
-                            <td>Sevilla</td>
-                            <td class="d-flex justify-content-evenly">
-                                <a href="#" class="btn btn-danger flex-grow-1 mx-1">Borrar</a>
-                                <a href="#" class="btn btn-success flex-grow-1 mx-1">Editar</a>
-                                <a href="#" class="btn btn-info flex-grow-1 mx-1">Ver</a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <p  class="text-muted">Listado actualizado...</p>
+            <div class="col-md-8">
+                <h1 class="text-center">Ventas</h1>
+                <div id="myfirstchart" style="height: 250px;"></div>
             </div>
         </div>
     </div>
     <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js'
         integrity='sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0' crossorigin='anonymous'>
     </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
     <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
