@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link href='css/miBootstrap.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bootstrap</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Logo -->
+        <div class="row justify-content-center">
+            <div class="col-4 col-md-3 col-lg-2">
+                <img src="images/logo.svg" alt="Logo" class="logo img-fluid" style="width: 100px;">
+            </div>
+        </div>
+
+        <!-- Menu -->
+        <div class="row mb-3">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="#">Navbar</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Features</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Pricing</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled" href="#" tabindex="-1"
+                                        aria-disabled="true">Disabled</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Carusel -->
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" style="height: 360px;">
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="http://placeimg.com/1040/500/tech" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="http://placeimg.com/1040/360/animals" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="http://placeimg.com/1040/360/nature" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- Multimedia -->
+        <div class="row">
+            <!-- Video -->
+            <div class="col-md-6 embed-responsive embed-responsive-4by3 my-3">
+                <iframe height="400px" width="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                    class="embed-responsive-item">
+                </iframe>
+            </div>
+
+            <!-- Galeria -->
+            <div class="col-md-6 my-3">
+                <div class="row text-center">
+                    <div class="col-6">
+                        <figure class="figure">
+                            <img src="images/imagen.jpg" alt="" class="figure-img img-fluid">
+                            <figcaption class="figure-caption">Descripcion Imagen <span
+                                    class="badge bg-warning">Oferta</span></figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-6">
+                        <figure class="figure">
+                            <img src="images/imagen.jpg" alt="" class="figure-img img-fluid">
+                            <figcaption class="figure-caption">Descripcion Imagen</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-6">
+                        <figure class="figure">
+                            <img src="images/imagen.jpg" alt="" class="figure-img img-fluid">
+                            <figcaption class="figure-caption">Descripcion Imagen <span
+                                    class="badge bg-warning">Oferta</span></figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-6">
+                        <figure class="figure">
+                            <img src="images/imagen.jpg" alt="" class="figure-img img-fluid">
+                            <figcaption class="figure-caption">Descripcion Imagen</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1 class="display-1 bg-primary text-white text-center">Anuncios</h1>
+        <!-- Anuncios -->
+        <div class="row justify-content-center my-3">
+            <div class="col-11">
+                <div class="row text-center justify-content-center">
+                    <div class="card col-md-3 m-3">
+                        <div class="card-header">
+                            En venta
+                        </div>
+                        <img src="images/autobus.jpg" class="card-img-top" alt="Mujer en autobus">
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Aperiam, soluta optio
+                                rerum repellendus laborum alias! Cumque libero architecto praesentium similique.</p>
+                        </div>
+                    </div>
+                    <div class="card col-md-3 m-3">
+                        <div class="card-header">
+                            En venta
+                        </div>
+                        <img src="images/autobus.jpg" class="card-img-top" alt="Mujer en autobus">
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Aperiam, soluta optio
+                                rerum repellendus laborum alias! Cumque libero architecto praesentium similique.</p>
+                        </div>
+                    </div>
+                    <div class="card col-md-3 m-3">
+                        <div class="card-header">
+                            Vendido
+                        </div>
+                        <img src="images/autobus.jpg" class="card-img-top" alt="Mujer en autobus">
+                        <div class="card-body">
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Aperiam, soluta optio
+                                rerum repellendus laborum alias! Cumque libero architecto praesentium similique.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="display-1 bg-primary text-white text-center">CONTACTO</h1>
+            <!-- Formulario -->
+            <div class="row my-3 justify-content-center">
+                <div class="col-md-3 col-sm-6">
+                    <form action="#" class="">
+                        <div class="col-12 mb-2">
+                            <label for="nombre-apellido" class="form-label">Nombre y Apellidos</label>
+                            <input type="text" class="form-control" id="nombre-apellido">
+                        </div>
+                        <div class="col-12 mb-2">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+                        <div class="col-12 mb-2">
+                            <label for="consulta" class="form-label">Consulta</label>
+                            <textarea class="form-control" id="consulta" rows="3"></textarea>
+                        </div>
+                        <div class="col-12 d-flex justify-content-end">
+                            <button type="submit" class="btn btn-dark">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <a href="#" class="btn btn-dark btn-lg">Contacta con nosotros</a>
+                    <p>Estaremos encantados de resolverte cualquier duda que tengas</p>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-dark text-white p-3">
+            <!-- Pie 1 -->
+            <div class="row justify-content-center text-center">
+                <div class="col-6">
+                    <p>Copyrigh 2020</p>
+                </div>
+            </div>
+
+            <!-- Pie 2 -->
+            <div class="row justify-content-center text-center">
+                <div class="col-md-1 col-2 img-fluid">
+                    <i class="fab fa-twitter img-fluid"></i>
+                </div>
+                <div class="col-md-1 col-sm-2 img-fluid">
+                    <i class="fab fa-facebook img-fluid"></i>
+                </div>
+                <div class="col-md-1 col-sm-2 img-fluid">
+                    <i class="fab fa-youtube img-fluid"></i>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- Sticky alert -->
+    <div class="alert alert-warning alert-dismissible fade show fixed-bottom text-center" role="alert">
+        Si continuas navegando en esta pagina, se dara por echo que <strong>aceptas las cookies</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    <script src='js/bootstrap.min.js'></script>
+</body>
+
+</html>
