@@ -21,6 +21,7 @@
 
   &:hover {
     color: $body-color;
+    transform: scale(1.05);
     text-decoration: if($link-hover-decoration == underline, none, null);
   }
 
@@ -35,6 +36,7 @@
   &:active,
   &.active {
     @include box-shadow($btn-active-box-shadow);
+    transform: translateY(1px);
 
     &:focus {
       @include box-shadow($btn-focus-box-shadow, $btn-active-box-shadow);
@@ -48,6 +50,8 @@
     opacity: $btn-disabled-opacity;
     @include box-shadow(none);
   }
+
+
 }
 
 
@@ -102,6 +106,7 @@
 
 .btn-lg {
   @include button-size($btn-padding-y-lg, $btn-padding-x-lg, $btn-font-size-lg, $btn-border-radius-lg);
+
 }
 
 .btn-sm {
