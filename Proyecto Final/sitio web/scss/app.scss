@@ -1,13 +1,154 @@
 @import "variables.scss";
-@import 'mixins';
+@import "mixins";
 @import "fonts.scss";
-
+@import "animation.scss";
 html,
 *,
 *::after,
 *::before {
     box-sizing: border-box;
-    margin:0;
-    padding:0;
-    font-family: "Roboto",sans-serif;
+    margin: 0;
+    padding: 0;
 }
+
+body,
+* {
+    font-family: $fuente_principal;
+}
+
+// Para que el scroll spy funcione correctamente
+body {
+    position: relative;
+}
+
+// NAV
+.nav-superior-visible {
+    background-color: $bg-cabecera;
+
+    a:hover {
+        font-size: 1.5rem;
+
+        @include brackpoint-lg {
+            font-size: 1rem;
+            transform: scale(1.5);
+        }
+    }
+}
+
+.nav-superior-transparente {
+    a:hover {
+        font-size: 1.5rem;
+
+        @include brackpoint-lg {
+            font-size: 1rem;
+            transform: scale(1.5);
+        }
+    }
+}
+
+.cabezera {
+    @include imagen-fixed("../images/header.jpg", 100vh);
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+
+        margin: 0;
+        padding: 0 20px;
+
+        font-family: sans-serif;
+        // font-size: calc(100vw / 16);
+        text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        text-transform: uppercase;
+        // border: 15px solid #000;
+        border-top: none;
+
+        &:hover span {
+            animation-name: animate;
+            animation-duration: 3s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            // animation: animate 3s alternate infinite;
+        }
+
+        span {
+            display: inline-block;
+
+            &:nth-child(4) {
+                animation-name: animate;
+                animation-duration: 3s;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+            }
+
+            @for $i from 1 to length($animacion-delay) {
+                &:nth-child(#{length($animacion-delay)}n+#{$i}){
+                    animation-delay: nth($animacion-delay,$i);
+                }
+            }
+        }
+
+    }
+
+}
+
+.icono-small {
+    font-size: 3rem;
+    width: 5rem;
+    height: 5rem;
+    transition-property: transform;
+    transition-duration: 500ms;
+
+    &:hover {
+        transform: scale(1.2) rotate(calc(360deg * 1));
+    }
+}
+
+.mensaje {
+    padding-top: 56px;
+    padding-bottom: 20px;
+}
+
+.mi-contenedor-progresbar{
+    height: 1.5rem;
+    font-size: 1rem;
+}
+
+
+#informacion-solcitada {
+    height: 150px;
+}
+
+.link-personalizado {
+    i {
+        transition-property: transform color;
+        transition-duration: 500ms;
+    }
+
+    &:hover {
+        i {
+            transform: scale(1.5);
+            color: $texto-claro;
+        }
+    }
+}
+
+.link-facebook {
+    color: $ic-facebook;
+}
+
+.link-google-plus {
+    color: $ic-google-plus;
+}
+
+.link-linkedin {
+    color: $ic-link-edin;
+}
+
+.link-twitter {
+    color: $ic-twitter;
+}
+

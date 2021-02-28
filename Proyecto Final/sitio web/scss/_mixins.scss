@@ -1,28 +1,42 @@
-@mixin imagen-fondo($imagen) {
+@mixin imagen-fixed($imagen,$size) {
     background-image: url($imagen);
-    background-position: center center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-}
-
-@mixin gradiente($color1,$color2) {
-    background: linear-gradient(to right, $color1 ,$color2);
+    background-position: center;
+    background-size: cover;
+    height: $size;
 }
 
 //MEDIAS QUERIES
-@mixin telefono {
-    @media screen and (min-width: #{$telefono}){
+@mixin brackpoint-s {
+    @media screen and (min-width: #{$s}){
         @content;
     }
 }
 
-@mixin tablet {
-    @media screen and (min-width: #{$tablet}){
+@mixin brackpoint-sm {
+    @media screen and (min-width: #{$sm}){
         @content;
     }
 }
 
-@mixin desktop {
-    @media screen and (min-width: #{$desktop}){
+@mixin brackpoint-md {
+    @media screen and (min-width: #{$md}){
+        @content;
+    }
+}
+@mixin brackpoint-lg {
+    @media screen and (min-width: #{$lg}){
+        @content;
+    }
+}
+@mixin brackpoint-xl {
+    @media screen and (min-width: #{$xl}){
+        @content;
+    }
+}
+@mixin brackpoint-xxl {
+    @media screen and (min-width: #{$xxl}){
         @content;
     }
 }

@@ -1,0 +1,159 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf");
+}
+@keyframes animate {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  40% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-130px) rotate(180deg);
+  }
+  60% {
+    transform: translateY(0px) rotate(360deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(360deg);
+  }
+}
+html,
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+.nav-superior-visible {
+  background-color: #3974AC;
+}
+.nav-superior-visible a:hover {
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 992px) {
+  .nav-superior-visible a:hover {
+    font-size: 1rem;
+    transform: scale(1.5);
+  }
+}
+
+.nav-superior-transparente a:hover {
+  font-size: 1.5rem;
+}
+@media screen and (min-width: 992px) {
+  .nav-superior-transparente a:hover {
+    font-size: 1rem;
+    transform: scale(1.5);
+  }
+}
+
+.cabezera {
+  background-image: url("../images/header.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cabezera h1 {
+  margin: 0;
+  padding: 0 20px;
+  font-family: sans-serif;
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  border-top: none;
+}
+.cabezera h1:hover span {
+  animation-name: animate;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.cabezera h1 span {
+  display: inline-block;
+}
+.cabezera h1 span:nth-child(4) {
+  animation-name: animate;
+  animation-duration: 3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+.cabezera h1 span:nth-child(5n+1) {
+  animation-delay: 0s;
+}
+.cabezera h1 span:nth-child(5n+2) {
+  animation-delay: 0.2s;
+}
+.cabezera h1 span:nth-child(5n+3) {
+  animation-delay: 0.4s;
+}
+.cabezera h1 span:nth-child(5n+4) {
+  animation-delay: 0.2s;
+}
+
+.icono-small {
+  font-size: 3rem;
+  width: 5rem;
+  height: 5rem;
+  transition-property: transform;
+  transition-duration: 500ms;
+}
+.icono-small:hover {
+  transform: scale(1.2) rotate(calc(360deg * 1));
+}
+
+.mensaje {
+  padding-top: 56px;
+  padding-bottom: 20px;
+}
+
+.mi-contenedor-progresbar {
+  height: 1.5rem;
+  font-size: 1rem;
+}
+
+#informacion-solcitada {
+  height: 150px;
+}
+
+.link-personalizado i {
+  transition-property: transform color;
+  transition-duration: 500ms;
+}
+.link-personalizado:hover i {
+  transform: scale(1.5);
+  color: #E4FDE4;
+}
+
+.link-facebook {
+  color: #4C66A4;
+}
+
+.link-google-plus {
+  color: #DD4B39;
+}
+
+.link-linkedin {
+  color: #0077B7;
+}
+
+.link-twitter {
+  color: #2FC2EF;
+}
