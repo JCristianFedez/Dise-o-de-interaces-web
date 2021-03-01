@@ -12,13 +12,21 @@
     <title>Crisitian</title>
 </head>
 
-<!-- TODO: CAMBIAR COLORES EN EL WORD Y ESTILOS USADOS ADEMAS DE ELIMINAR VARIBLES INCECESARIAS -->
 
 <body data-bs-spy="scroll" data-bs-target="#navegacion-principal" data-bs-offset="100">
-    <!-- Barra de navegacion superior -->
+    <!-- ENlace para cuando pinchemos en inicio nos mande aqui -->
     <div id="inicio"></div>
+
+    <!-- Boton de ir arriba -->
+    <span
+        class="ir-arriba bg-dark bg-gradient rounded-circle 
+        text-white fs-4">
+        <i class="fas fa-arrow-up"></i>
+    </span>
+    
+    <!-- Barra de navegacion superior -->
     <nav id="navegacion-principal"
-        class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent nav-superior-transparente">
+        class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent nav-superior">
         <div class="container">
             <a class="navbar-brand" href="#">JCFT</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#enlaces-navegacion"
@@ -49,8 +57,9 @@
 
     <!-- Contenedor de la cabezera -->
     <header>
-        <div class="cabezera">
-            <h1 class="text-white fw-bold display-1">
+        <div class="cabezera 
+        d-flex justify-content-center align-items-center flex-column">
+            <h1 class="text-white fw-bold display-1 text-uppercase">
                 <span>C</span>
                 <span>R</span>
                 <span>I</span>
@@ -60,6 +69,7 @@
                 <span>A</span>
                 <span>N</span>
             </h1>
+            <h4 class="text-light text-capitalize">Programador y desarrollador web</h4>
         </div>
     </header>
 
@@ -316,52 +326,54 @@
 
     <!-- Contenedor del pie -->
     <footer>
-        <div class="bg-dark text-white py-3 bg-gradient">
-            <div class="container">
-                <!-- Conocimientos -->
-                <div class="row">
-                    <div class="col-md-4 mb-3 d-flex align-items-center flex-column">
-                        <h4 class="text-center my-3">Conocimientos</h4>
-                        <ul class="list-unstyled">
-                            <li>Despliegue de Aplicaciones Web</li>
-                            <li>Desarrollo de Aplicaciones en Entorno Cliente</li>
-                            <li>Desarrollo de Aplicaciones en Entorno Servidor</li>
-                            <li>Diseño de Interfazes Webº</li>
-                            <li>MariaDB | MySQL | PostgreSQL</li>
-                        </ul>
-                    </div>
-                    <!-- Contacto -->
-                    <div class="col-md-4 mb-3 d-flex align-items-center flex-column">
-                        <h4 class="text-center my-3">Contacto</h4>
-                        <ul class="list-unstyled">
-                            <li><i class="far fa-envelope"></i>
-                                Email:
-                                <a href="mailto:j.cristian.2daw@gmail.com"
-                                    class="text-decoration-none link-light fw-bold">
-                                    j.cristian.2daw@gmail.com
-                                </a>
-                            </li>
-                            <li><i class="fas fa-phone-volume"></i>
-                                Tlfn:
-                                <a href="tel: +34630985990" class="text-decoration-none link-light fw-bold">
-                                    630 98 59 90
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Redes Sociales -->
-                    <div class="col-md-4 mb-3 d-flex align-items-center flex-column">
-                        <h4 class="text-center my-3">Redes Sociales</h4>
-                        <ul class="list-inline fs-3">
-                            <li class="list-inline-item mx-3"><a href="" class="link-personalizado link-facebook"><i
-                                        class="fab fa-facebook-f"></i></a></i></li>
-                            <li class="list-inline-item mx-3"><a href="" class="link-personalizado link-google-plus"><i
-                                        class="fab fa-google-plus-g"></i></a></li>
-                            <li class="list-inline-item mx-3"><a href="" class="link-personalizado link-linkedin"><i
-                                        class="fab fa-linkedin-in"></i></a></li>
-                            <li class="list-inline-item mx-3"><a href="" class="link-personalizado link-twitter"><i
-                                        class="fab fa-twitter"></i></a></i></li>
-                        </ul>
+        <div class="mi-footer">
+            <div class="bg-dark text-white py-3 bg-gradient">
+                <div class="container">
+                    <!-- Conocimientos -->
+                    <div class="row">
+                        <div class="col-md-4 mb-3 d-md-flex align-items-center flex-column">
+                            <h4 class="text-center my-3">Conocimientos</h4>
+                            <ul class="list-unstyled">
+                                <li>Despliegue de Aplicaciones Web</li>
+                                <li>Desarrollo de Aplicaciones en Entorno Cliente</li>
+                                <li>Desarrollo de Aplicaciones en Entorno Servidor</li>
+                                <li>Diseño de Interfazes Webº</li>
+                                <li>MariaDB | MySQL | PostgreSQL</li>
+                            </ul>
+                        </div>
+                        <!-- Contacto -->
+                        <div class="col-md-4 mb-3 d-md-flex align-items-center flex-column">
+                            <h4 class="text-center my-3">Contacto</h4>
+                            <ul class="list-unstyled">
+                                <li><i class="far fa-envelope"></i>
+                                    Email:
+                                    <a href="mailto:j.cristian.2daw@gmail.com"
+                                        class="text-decoration-none link-light fw-bold">
+                                        j.cristian.2daw@gmail.com
+                                    </a>
+                                </li>
+                                <li><i class="fas fa-phone-volume"></i>
+                                    Tlfn:
+                                    <a href="tel: +34630985990" class="text-decoration-none link-light fw-bold">
+                                        630 98 59 90
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Redes Sociales -->
+                        <div class="col-md-4 mb-3 d-flex align-items-center flex-column">
+                            <h4 class="text-center my-3">Redes Sociales</h4>
+                            <ul class="list-inline fs-3">
+                                <li class="list-inline-item mx-3"><a href="" class="link-personalizado link-facebook"><i
+                                            class="fab fa-facebook-f"></i></a></i></li>
+                                <li class="list-inline-item mx-3"><a href="" class="link-personalizado link-google-plus"><i
+                                            class="fab fa-google-plus-g"></i></a></li>
+                                <li class="list-inline-item mx-3"><a href="" class="link-personalizado link-linkedin"><i
+                                            class="fab fa-linkedin-in"></i></a></li>
+                                <li class="list-inline-item mx-3"><a href="" class="link-personalizado link-twitter"><i
+                                            class="fab fa-twitter"></i></a></i></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -37,24 +37,42 @@ body {
   position: relative;
 }
 
-.nav-superior-visible {
-  background-color: #3974AC;
+.ir-arriba {
+  display: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  width: 3rem;
+  height: 3rem;
+  opacity: 0.75;
+  transition-property: transform opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
-.nav-superior-visible a:hover {
-  font-size: 1.5rem;
+.ir-arriba:hover {
+  opacity: 1;
 }
-@media screen and (min-width: 992px) {
-  .nav-superior-visible a:hover {
-    font-size: 1rem;
-    transform: scale(1.5);
-  }
+.ir-arriba:hover i {
+  transform: translateY(-5px);
+}
+.ir-arriba i {
+  transition-property: transform opacity;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
 }
 
-.nav-superior-transparente a:hover {
+.nav-superior {
+  transition-property: background-color;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+}
+.nav-superior a:hover {
   font-size: 1.5rem;
 }
 @media screen and (min-width: 992px) {
-  .nav-superior-transparente a:hover {
+  .nav-superior a:hover {
     font-size: 1rem;
     transform: scale(1.5);
   }
@@ -67,18 +85,11 @@ body {
   background-position: center;
   background-size: cover;
   height: 100vh;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  cursor: default;
 }
 .cabezera h1 {
-  margin: 0;
-  padding: 0 20px;
   font-family: sans-serif;
-  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  text-transform: uppercase;
-  border-top: none;
+  text-shadow: 0 5px 15px #ff06c9;
 }
 .cabezera h1:hover span {
   animation-name: animate;

@@ -1,19 +1,19 @@
 "use strict";
 
-/* cambia color navegación al hacer scroll */
+// cambia color navegación al hacer scroll
 window.onscroll = function (e) {
   var scroll = window.scrollY;
   var headerScroll = document.querySelector('#navegacion-principal');
 
   if (scroll > 300) {
     headerScroll.classList.remove("bg-transparent");
-    headerScroll.classList.remove("nav-superior-transparente");
-    headerScroll.classList.add('nav-superior-visible');
+    headerScroll.classList.add('bg-primary');
   } else {
-    headerScroll.classList.remove('nav-superior-visible');
-    headerScroll.classList.add("nav-superior-transparente");
+    headerScroll.classList.remove('bg-primary');
+    headerScroll.classList.add("bg-transparent");
   }
 }; // Animacion carga progressbar cuando aparezca en pantalla
+//REFERNECIA: https://www.jasoft.org/Blog/post/Detectar-la-aparicion-y-desaparicion-de-un-elemento-evento-inViewport
 
 /**
  * true = esta oculto y se puede cargar
@@ -104,8 +104,7 @@ function inViewportPartially(elto, handler) {
   window.addEventListener("load", detectarPosibleCambio);
   window.addEventListener("resize", detectarPosibleCambio);
   window.addEventListener("scroll", detectarPosibleCambio);
-} //REFERNECIA: https://www.jasoft.org/Blog/post/Detectar-la-aparicion-y-desaparicion-de-un-elemento-evento-inViewport
-// Validacion formulario
+} // Validacion formulario
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 
 
@@ -124,4 +123,25 @@ function inViewportPartially(elto, handler) {
       form.classList.add('was-validated');
     }, false);
   });
-})();
+})(); // Boton para ir arriba
+// Referencia: https://codepen.io/rdallaire/pen/apoyx
+
+
+$(document).ready(function () {
+  $('.ir-arriba').click(function () {
+    $('body, html').animate({
+      scrollTop: '0px'
+    }, 300);
+  });
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 300) {
+      $('.ir-arriba').slideDown(300);
+      $('.ir-arriba').css("display", "flex");
+      $('.ir-arriba').css("justify-content", "center");
+      $('.ir-arriba').css("align-items", "center");
+    } else {
+      $('.ir-arriba').slideUp(300);
+    }
+  });
+  console.log($(this).scrollTop());
+});

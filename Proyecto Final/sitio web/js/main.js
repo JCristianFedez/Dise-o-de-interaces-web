@@ -1,17 +1,15 @@
-/* cambia color navegación al hacer scroll */
-
+// cambia color navegación al hacer scroll
 window.onscroll = function (e) {
     let scroll = window.scrollY;
 
     const headerScroll = document.querySelector('#navegacion-principal');
     if (scroll > 300) {
         headerScroll.classList.remove("bg-transparent");
-        headerScroll.classList.remove("nav-superior-transparente");
-        headerScroll.classList.add('nav-superior-visible');
+        headerScroll.classList.add('bg-primary');
 
     } else {
-        headerScroll.classList.remove('nav-superior-visible');
-        headerScroll.classList.add("nav-superior-transparente");
+        headerScroll.classList.remove('bg-primary');
+        headerScroll.classList.add("bg-transparent");
 
     }
 };
@@ -20,52 +18,53 @@ window.onscroll = function (e) {
 
 
 // Animacion carga progressbar cuando aparezca en pantalla
+//REFERNECIA: https://www.jasoft.org/Blog/post/Detectar-la-aparicion-y-desaparicion-de-un-elemento-evento-inViewport
 
 /**
  * true = esta oculto y se puede cargar
  */
 let oculto;
 
-addEventListener("DOMContentLoaded",function(){
+addEventListener("DOMContentLoaded", function () {
     let progresBars = document.querySelectorAll(".mi-progresbar");
 
     //Cargo la variable oculto como un array con valores true
     oculto = new Array(progresBars.length).fill(true);
 
     for (let i = 0; i < progresBars.length; i++) {
-        inViewportPartially(progresBars[i],cargaProgresBar);
+        inViewportPartially(progresBars[i], cargaProgresBar);
     }
 });
 
-function cargaProgresBar(){
+function cargaProgresBar() {
     let progresBars = document.querySelectorAll(".mi-progresbar");
     let width = new Array(progresBars.length);
     let id = new Array(progresBars.length);
     for (let i = 0; i < progresBars.length; i++) {
 
         // Si el progresbar esta visible y antes estaba oculto
-        if(isElementPartiallyVisible(progresBars[i]) && oculto[i]){
+        if (isElementPartiallyVisible(progresBars[i]) && oculto[i]) {
             progresBars[i].style.width = "0%";
 
             width[i] = 0;
-            id[i] = setInterval(function(){
-                if(width[i] >= progresBars[i].getAttribute("aria-valuenow")){
+            id[i] = setInterval(function () {
+                if (width[i] >= progresBars[i].getAttribute("aria-valuenow")) {
                     clearInterval(id[i]);
                     width[i] = 0;
-                }else{
+                } else {
                     width[i]++;
                     progresBars[i].style.width = `${width[i]}%`;
                     progresBars[i].textContent = `${width[i]}%`;
                 }
-            },15);
+            }, 15);
             oculto[i] = false;
-        }else{
+        } else {
             // Si antes estaba visible pero ahora no lo vacio y le digo que se pueda volver a cargar
-            if(!isElementPartiallyVisible(progresBars[i])){
+            if (!isElementPartiallyVisible(progresBars[i])) {
                 oculto[i] = true;
                 progresBars[i].style.width = "0%";
             }
-            
+
         }
     }
 }
@@ -108,7 +107,6 @@ function inViewportPartially(elto, handler) {
     window.addEventListener("scroll", detectarPosibleCambio);
 }
 
-//REFERNECIA: https://www.jasoft.org/Blog/post/Detectar-la-aparicion-y-desaparicion-de-un-elemento-evento-inViewport
 
 
 
@@ -134,3 +132,28 @@ function inViewportPartially(elto, handler) {
             }, false)
         })
 })()
+
+
+// Boton para ir arriba
+// Referencia: https://codepen.io/rdallaire/pen/apoyx
+$(document).ready(function () {
+
+    $('.ir-arriba').click(function () {
+        $('body, html').animate({
+            scrollTop: '0px'
+        }, 300);
+    });
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('.ir-arriba').slideDown(300);
+            
+            $('.ir-arriba').css("display","flex");
+            $('.ir-arriba').css("justify-content","center");
+            $('.ir-arriba').css("align-items","center");
+        } else {
+            $('.ir-arriba').slideUp(300);
+        }
+    });
+    console.log($(this).scrollTop());
+});
