@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl' crossorigin='anonymous'>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Casa rural</title>
+</head>
+
+<body>
+    <!-- Barra de navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary bg-gradient mb-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.svg" class="img-fluid logo rounded-circle">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav nav-pills nav-fill w-75 mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">La Casa</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Habitaciones</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Servicios
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Servicio-1</a></li>
+                            <li><a class="dropdown-item" href="#">Servicio-2</a></li>
+                            <li><a class="dropdown-item" href="#">Servicio 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Entorno</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tarifas</a>
+                    </li>
+                </ul>
+
+                <!-- Boton para lanzar el modal / Codigo del modal despues del footer-->
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalReserva">
+                    Reservar
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cabezera -->
+    <header>
+        <!-- Carusel -->
+        <div id="carouselExampleInterval" class="carousel slide container mb-3" data-bs-ride="carousel"
+            style="height: 400px;">
+            <div class="carousel-inner h-100">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="images/slider-1.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="images/slider-2.jpeg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/slider-3.jpeg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev" style="background-color: inherit; border: inherit;">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next" style="background-color: inherit; border: inherit;">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Cuerpo de la pagina -->
+    <main>
+
+        <div class="container">
+
+            <!-- La casa -->
+            <div class="mb-5">
+                <h1 class="text-center mb-3">La Casa</h1>
+                <div class="row align-items-center">
+                    <!-- Video -->
+                    <div class="col-md-6 embed-responsive embed-responsive-4by3 my-3">
+                        <iframe height="350px" width="100%" src="https://www.youtube.com/embed/TwFWpvtzsxo"
+                            class="embed-responsive-item p-3">
+                        </iframe>
+                    </div>
+                    <!-- Texto -->
+                    <div class="col-md-6 p-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat molestiae aut possimus odit
+                        veritatis id, unde omnis quidem, hic labore at autem totam harum, numquam dolores! Cum,
+                        dignissimos.
+                        Cum ipsa tempora incidunt perferendis ad earum placeat id facere totam est.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Apartamento -->
+            <div class="mb-5">
+                <h1 class="text-center mb-3">Apartamento</h1>
+
+                <!-- Galeria de casas -->
+                <div class="row">
+                    <div class="col-md-4 col-12 col-sm-6 mb-3">
+                        <div class="card w-100">
+                            <img src="images/casa-1.jpeg" class="card-img-top" alt="..." data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Casa">
+                            <div class="card-body">
+                                <h5 class="card-title">Apartamento 1</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 col-sm-6 mb-3">
+                        <div class="card w-100">
+                            <img src="images/casa-2.jpeg" class="card-img-top" alt="..." data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Casa">
+                            <div class="card-body">
+                                <h5 class="card-title">Apartamento 2</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 col-sm-6 mb-3">
+                        <div class="card w-100">
+                            <img src="images/casa-3.jpeg" class="card-img-top" alt="..." data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Casa">
+                            <div class="card-body">
+                                <h5 class="card-title">Apartamento 3</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 col-sm-6 mb-3">
+                        <div class="card w-100">
+                            <img src="images/casa-4.jpeg" class="card-img-top" alt="..." data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Casa">
+                            <div class="card-body">
+                                <h5 class="card-title">Apartamento 4</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-12 col-sm-6 mb-3">
+                        <div class="card w-100">
+                            <img src="images/casa-5.jpeg" class="card-img-top" alt="..." data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Casa">
+                            <div class="card-body">
+                                <h5 class="card-title">Apartamento 5</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 mb-3">
+                        <div class="card w-100">
+                            <img src="images/casa-6.jpeg" class="card-img-top" alt="..." data-bs-toggle="tooltip"
+                                data-bs-placement="top" title="Casa">
+                            <div class="card-body">
+                                <h5 class="card-title">Apartamento 6</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk
+                                    of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Actividades -->
+            <div class="mb-5">
+                <h1 class="text-center mb-3">Actividades</h1>
+
+                <!-- ScrollSpy -->
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-10">
+                        <div class="row d-flex justify-content-between align-items-center">
+                            <div id="mis-actividades" class="list-group col-6" style="height: 200px;">
+                                <a class="list-group-item list-group-item-action" href="#list-item-1">Senderismo</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-2">Paseo a caballo</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-3">Visita al castillo</a>
+                                <a class="list-group-item list-group-item-action" href="#list-item-4">Canoas en el rio</a>
+                            </div>
+                            <div data-bs-spy="scroll" data-bs-target="#mis-actividades" data-bs-offset="0" tabindex="0"
+                                class="mis-actividades-scrollspy position-relative col-6">
+                                <h4 id="list-item-1">Senderismo</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sequi laborum
+                                    doloremque
+                                    impedit eius ad blanditiis vel commodi cumque reiciendis?</p>
+                                <h4 id="list-item-2">Paseo a caballo</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sequi laborum
+                                    doloremque
+                                    impedit eius ad blanditiis vel commodi cumque reiciendis?</p>
+                                <h4 id="list-item-3">Visita al caballo</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sequi laborum
+                                    doloremque
+                                    impedit eius ad blanditiis vel commodi cumque reiciendis?</p>
+                                <h4 id="list-item-4">Canoas en el rio</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sequi laborum
+                                    doloremque
+                                    impedit eius ad blanditiis vel commodi cumque reiciendis?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Galeria -->
+            <div class="mb-5">
+                <h1 class="text-center mb-3">Galeria</h1>
+
+                <div class="row">
+                    <div class="col-6 col-lg-3 col-xxl-2 mb-3">
+                        <img src="images/galeria-1.jpeg" alt="" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#galeria-1">
+                    </div>
+                    <div class="modal fade" id="galeria-1" tabindex="-1" aria-labelledby="galeria-1-Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <img src="images/galeria-1.jpeg" alt="" srcset="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-6 col-lg-3 col-xxl-2 mb-3">
+                        <img src="images/galeria-2.jpeg" alt="" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#galeria-2">
+                    </div>
+                    <div class="modal fade" id="galeria-2" tabindex="-1" aria-labelledby="galeria-2-Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <img src="images/galeria-2.jpeg" alt="" srcset="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-6 col-lg-3 col-xxl-2 mb-3">
+                        <img src="images/galeria-3.jpeg" alt="" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#galeria-3">
+                    </div>
+                    <div class="modal fade" id="galeria-3" tabindex="-1" aria-labelledby="galeria-3-Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <img src="images/galeria-3.jpeg" alt="" srcset="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-6 col-lg-3 col-xxl-2 mb-3">
+                        <img src="images/galeria-4.jpeg" alt="" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#galeria-4">
+                    </div>
+                    <div class="modal fade" id="galeria-4" tabindex="-1" aria-labelledby="galeria-4-Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <img src="images/galeria-4.jpeg" alt="" srcset="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-6 col-lg-3 col-xxl-2 mb-3">
+                        <img src="images/galeria-5.jpeg" alt="" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#galeria-5">
+                    </div>
+                    <div class="modal fade" id="galeria-5" tabindex="-1" aria-labelledby="galeria-5-Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <img src="images/galeria-5.jpeg" alt="" srcset="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-6 col-lg-3 col-xxl-2 mb-3">
+                        <img src="images/galeria-6.jpeg" alt="" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#galeria-6">
+                    </div>
+                    <div class="modal fade" id="galeria-6" tabindex="-1" aria-labelledby="galeria-6-Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <img src="images/galeria-6.jpeg" alt="" srcset="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-6 col-lg-3 col-xxl-2 mb-3">
+                        <img src="images/galeria-7.jpeg" alt="" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#galeria-7">
+                    </div>
+                    <div class="modal fade" id="galeria-7" tabindex="-1" aria-labelledby="galeria-7-Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <img src="images/galeria-7.jpeg" alt="" srcset="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-6 col-lg-3 col-xxl-2 mb-3">
+                        <img src="images/galeria-8.jpeg" alt="" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#galeria-8">
+                    </div>
+                    <div class="modal fade" id="galeria-8" tabindex="-1" aria-labelledby="galeria-8-Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <img src="images/galeria-8.jpeg" alt="" srcset="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-6 col-lg-3 col-xxl-2 mb-3">
+                        <img src="images/galeria-9.jpeg" alt="" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#galeria-9">
+                    </div>
+                    <div class="modal fade" id="galeria-9" tabindex="-1" aria-labelledby="galeria-9-Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <img src="images/galeria-9.jpeg" alt="" srcset="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-6 col-lg-3 col-xxl-2 mb-3">
+                        <img src="images/galeria-10.jpeg" alt="" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#galeria-10">
+                    </div>
+                    <div class="modal fade" id="galeria-10" tabindex="-1" aria-labelledby="galeria-10-Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <img src="images/galeria-10.jpeg" alt="" srcset="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-6 col-lg-3 col-xxl-2 mb-3">
+                        <img src="images/galeria-1.jpeg" alt="" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#galeria-11">
+                    </div>
+                    <div class="modal fade" id="galeria-11" tabindex="-1" aria-labelledby="galeria-11-Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <img src="images/galeria-11.jpeg" alt="" srcset="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col-6 col-lg-3 col-xxl-2 mb-3">
+                        <img src="images/galeria-12.jpeg" alt="" class="img-fluid" data-bs-toggle="modal"
+                            data-bs-target="#galeria-12">
+                    </div>
+                    <div class="modal fade" id="galeria-12" tabindex="-1" aria-labelledby="galeria-12-Label"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <img src="images/galeria-12.jpeg" alt="" srcset="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <!-- Contacto -->
+            <div class="mb-5">
+                <h1 class="text-center mb-3">Contacto</h1>
+
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="apellidos" class="form-label">Apellidos</label>
+                        <input type="text" class="form-control" id="apellidos">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="telefono" class="form-label">Telefono</label>
+                        <input type="number" class="form-control" id="telefono">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email">
+                    </div>
+                    <div class="col-12">
+                        <label for="comentario" class="form-label">Email</label>
+                        <textarea name="comentario" id="comentario" class="form-control"></textarea>
+                    </div>
+                    <div class="col-12 d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary me-3">Enviar</button>
+                        <button type="reset" class="btn btn-danger">Borrar</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Localizacion -->
+            <div class="mb-5">
+                <h1 class="text-center mb-3">Localizacion</h1>
+
+                <!-- TODO: INsertar mapa -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-md-8 col-sm-8 col-10">
+                        <img src="images/mapa-utrera.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Pie -->
+    <footer class="bg-dark bg-gradient text-white py-3">
+        <div class="container">
+            <!-- Fila 1 -->
+            <div class="row mb-3 ">
+
+                <!-- Logo -->
+                <div class="col-sm-4 d-flex align-items-center justify-content-center mb-3">
+                    <img src="images/logo.svg" alt="" class="img-fluid rounded-circle logo-footer">
+                </div>
+
+                <!-- Redes Sociales -->
+                <div class="col-sm-4 fs-1 d-flex align-items-center justify-content-center mb-3">
+                    <i class="fab fa-facebook-square mx-2"></i>
+                    <i class="fab fa-twitter-square mx-2"></i>
+                    <i class="fab fa-instagram mx-2"></i>
+                    <i class="fab fa-google-plus-square mx-2"></i>
+                </div>
+
+                <!-- Info -->
+                <div class="col-sm-4 mb-3 d-flex align-items-center justify-content-center">
+                    <ul class="list-group">
+                        <li class="list-unstyled">C/ Paseo de Consolacion 1 - 41710 Utrera</li>
+                        <li class="list-unstyled">Tfno: 955860000</li>
+                        <li class="list-unstyled">Email: contacto@casarural.com</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright -->
+            <div class="row justify-content-center text-center">
+                <div class="col-12">
+                    <p>Coppyright 2020 - Todos los derechos reservados</p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <!--- Elementos esteticos ---------------------------------------------------------------------------------------->
+
+    <!-- Modal de reserva -->
+    <div class="modal fade" id="modalReserva" tabindex="-1" aria-labelledby="modalReservaLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-center" id="modalReservaLabel">Reserva</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body ">
+
+                    <!-- Formlario de reserva -->
+                    <form class="row g-3">
+                        <div class="col-12">
+                            <label for="apartamento" class="form-label">Apartamento</label>
+                            <select id="apartamento" class="form-select">
+                                <option selected>Apartamento 1</option>
+                                <option>Apartamento 2</option>
+                                <option>Apartamento 3</option>
+                            </select>
+                        </div>
+                        <div class="col-6">
+                            <label for="f-entrada" class="form-label">Fecha entrada</label>
+                            <input type="date" name="f-entrada" id="f-entrada" class="form-control">
+                        </div>
+                        <div class="col-6">
+                            <label for="f-salida" class="form-label">Fecha salida</label>
+                            <input type="date" name="f-salida" id="f-salida" class="form-control">
+                        </div>
+                        <div class="col-6">
+                            <label for="n-ninos" class="form-label">Nº Niños</label>
+                            <input type="number" name="n-ninos" id="n-ninos" class="form-control">
+                        </div>
+                        <div class="col-6">
+                            <label for="n-adultos" class="form-label">Nº Adultos</label>
+                            <input type="number" name="n-adultos" id="n-adultos" class="form-control">
+                        </div>
+                        <div class="col-12 text-center">
+                            <button type="button" class="btn btn-primary">Comprobar Disponibilidad</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Reservar</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Alert coockies -->
+    <div class="alert alert-warning alert-dismissible fade show fixed-bottom text-center" role="alert">
+        Si sigues aqui es que aceptas <strong>mis cookies</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+
+
+    <!-- Refernecia -->
+    <!-- https://forum.bootstrapstudio.io/t/toasts-do-not-work-by-default/5237 -->
+
+    <!-- Toast oferta -->
+    <div class="toast fixed-top fade show ms-auto" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+            <img src="images/logo.svg" class="rounded-circle me-2 logo" alt="..." >
+            <strong class="me-auto">Oferta</strong>
+            <small>Ahora mismo</small>
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+            Casa en oferta ahora mismo aprovecha.
+        </div>
+    </div>
+
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js'
+        integrity='sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0' crossorigin='anonymous'>
+    </script>
+    <script src='https://code.jquery.com/jquery-3.5.1.min.js'></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

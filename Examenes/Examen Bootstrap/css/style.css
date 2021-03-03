@@ -1,0 +1,13 @@
+.logo{
+    height: 40px;
+}
+
+.logo-footer{
+    height: 100px;
+
+}
+
+.mis-actividades-scrollspy{
+    height: 200px;
+    overflow-y: scroll;
+}
