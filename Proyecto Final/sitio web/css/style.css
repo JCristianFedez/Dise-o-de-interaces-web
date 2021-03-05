@@ -2,6 +2,10 @@
   font-family: "Roboto";
   src: url("../fonts/Roboto/Roboto-Regular.ttf");
 }
+@font-face {
+  font-family: "Vibur";
+  src: url("../fonts/Vibur/Vibur-Regular.ttf");
+}
 @keyframes animate {
   0% {
     transform: translateY(0px) rotate(0deg);
@@ -17,6 +21,38 @@
   }
   100% {
     transform: translateY(0px) rotate(360deg);
+  }
+}
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79% {
+    color: #333;
+  }
+  80% {
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
   }
 }
 html,
@@ -79,44 +115,48 @@ body {
 }
 
 .cabezera {
-  background-image: url("../images/header.jpg");
+  background-image: url("https://i1.wp.com/windowscustomization.com/wp-content/uploads/2018/08/rain-3.gif?fit=750%2C390&quality=80&strip=all&ssl=1");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   height: 100vh;
+  position: relative;
   cursor: default;
-}
-.cabezera h1 {
-  font-family: sans-serif;
-  text-shadow: 0 5px 15px #ff06c9;
-}
-.cabezera h1:hover span {
-  animation-name: animate;
-  animation-duration: 3s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
+  user-select: none;
 }
 .cabezera h1 span {
   display: inline-block;
-}
-.cabezera h1 span:nth-child(4) {
-  animation-name: animate;
-  animation-duration: 3s;
-  animation-direction: alternate;
-  animation-iteration-count: infinite;
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4482, 0 0 0.5em #ff44e0, 0 0 0.1em #ef44ff, 0 10px 3px #000;
+  font-family: "Vibur", sans-serif;
+  font-size: calc(100vw / 4);
 }
 .cabezera h1 span:nth-child(5n+1) {
-  animation-delay: 0s;
+  animation: blink linear infinite 2s 0s;
 }
 .cabezera h1 span:nth-child(5n+2) {
-  animation-delay: 0.2s;
+  animation: blink linear infinite 2s 0.2s;
 }
 .cabezera h1 span:nth-child(5n+3) {
-  animation-delay: 0.4s;
+  animation: blink linear infinite 2s 0.3s;
 }
 .cabezera h1 span:nth-child(5n+4) {
-  animation-delay: 0.2s;
+  animation: blink linear infinite 2s 0.4s;
+}
+@media screen and (min-width: 576px) {
+  .cabezera h1 span {
+    font-size: calc(100vw / 4);
+  }
+}
+@media screen and (min-width: 768px) {
+  .cabezera h1 span {
+    font-size: calc(100vw / 5);
+  }
+}
+@media screen and (min-width: 992px) {
+  .cabezera h1 span {
+    font-size: calc(100vw / 6);
+  }
 }
 
 .icono-small {

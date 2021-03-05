@@ -78,42 +78,37 @@ body {
 
 // Header
 .cabezera {
-    @include imagen-fixed("../images/header.jpg", 100vh);
+    @include imagen-fixed("https://i1.wp.com/windowscustomization.com/wp-content/uploads/2018/08/rain-3.gif?fit=750%2C390&quality=80&strip=all&ssl=1", 100vh);
+    position: relative;
+
     cursor: default;
+    user-select: none;
 
     h1 {
-
-        font-family: sans-serif;
-        // font-size: calc(100vw / 16);
-        text-shadow: 0 5px 15px rgb(255, 6, 201);
-
-        &:hover span {
-            animation-name: animate;
-            animation-duration: 3s;
-            animation-direction: alternate;
-            animation-iteration-count: infinite;
-            // animation: animate 3s alternate infinite;
-        }
-
         span {
             display: inline-block;
+            text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4482, 0 0 0.5em #ff44e0, 0 0 0.1em #ef44ff, 0 10px 3px #000;
 
-            &:nth-child(4) {
-                animation-name: animate;
-                animation-duration: 3s;
-                animation-direction: alternate;
-                animation-iteration-count: infinite;
-            }
+            font-family: $fuente_estetica;
 
             @for $i from 1 to length($animacion-delay) {
                 &:nth-child(#{length($animacion-delay)}n+#{$i}) {
-                    animation-delay: nth($animacion-delay, $i);
+                    animation: blink linear infinite 2s nth($animacion-delay, $i);
                 }
             }
+            font-size: calc(100vw / 4);
+
+            @include brackpoint-sm {
+                font-size: calc(100vw / 4);
+            }
+            @include brackpoint-md {
+                font-size: calc(100vw / 5);
+            }
+            @include brackpoint-lg {
+                font-size: calc(100vw / 6);
+            }
         }
-
     }
-
 }
 
 // Iconos de sobre mi
